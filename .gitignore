@@ -1,4 +1,4 @@
 /node_modules
 .vscode
 /copy
-.yarn-eror.log
+yarn-eror.log

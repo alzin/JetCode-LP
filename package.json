@@ -16,14 +16,15 @@
     "swiper": "^9.2.4",
     "web-vitals": "^2.1.0",
     "gh-pages": "^6.1.1",
-    "predeploy": "react-scripts build",
-    "deploy": "gh-pages -d build"
+    "react-icons": "^4.8.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "react-scripts build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

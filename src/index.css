@@ -26,6 +26,10 @@ body {
 
 a {
   text-decoration: none;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 ul {
@@ -36,4 +40,47 @@ ul {
 
 button {
   border: none;
+}
+
+
+.container {
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+@media (min-width: 768px) {
+  /* 
+  .container {
+    width: 750px;
+  } */
+
+  html {
+    /* font-size: 20px; */
+  }
+}
+
+
+@media (min-width: 992px) {
+  .container {
+    width: 992px;
+  }
+
+  html {
+    /* font-size: 22px; */
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+
+  html {
+    /* font-size: 25px; */
+  }
 }
