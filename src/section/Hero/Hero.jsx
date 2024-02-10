@@ -14,7 +14,7 @@ import { TryFreeButton } from '../../component/Buttons/Buttons'
 
 const Hero = () => {
     return (
-        <div className="hero">
+        <div className="hero container">
             <div className="hero-l">
                 <div className="top-post">
                     <a href="https://www.producthunt.com/products/triibe-3?utm_source=badge-top-post-badge&utm_medium=badge#triibe-550d1379-c712-4f7a-8e39-eca27797766a">

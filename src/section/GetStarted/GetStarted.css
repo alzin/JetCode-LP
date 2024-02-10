@@ -1,0 +1,62 @@
+.get-started {
+    width: 100%;
+    text-align: center;
+    padding: 80px 120px;
+    background-color: #212529;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #0b0211;
+    border-top: 1px solid #ffffff1a;
+}
+
+.get-started-l,
+.get-started-r {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: white;
+}
+
+.get-started-l {
+    flex: 2;
+}
+
+.get-started-l {}
+
+.get-started-l .store,
+.get-started-r .get-started-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex:1;
+}
+
+@media (max-width: 991px) {
+    .get-started {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    .get-started-l,
+    .get-started-r {
+        flex: 1;
+        gap: 20px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .get-started-r h2 {
+        max-width: 300px;
+
+    }
+
+    .get-started-r .get-started-button .TryFreeButton {
+        width: 140px;
+          margin-top: 10px;
+        margin-left: 0px;
+    }
+}

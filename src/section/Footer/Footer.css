@@ -1,0 +1,40 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #7875ea;
+    min-height: 65px;
+    padding: 24px 120px;
+    font-size: 13px;
+    color: white;
+
+}
+
+.copy-write {
+    flex: 2;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+@media (max-width: 991px) {
+    .footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .copy-write {
+        flex: 1;
+        text-align: center;
+    }
+
+    .terms {
+        justify-content: space-between;
+        flex: 1;
+        width: 100%;
+    }
+}
