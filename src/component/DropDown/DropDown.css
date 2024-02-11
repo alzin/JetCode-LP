@@ -11,3 +11,98 @@
     border-radius: 5px;
     margin-right: 30px;
 }
+
+
+
+
+/* accordion */
+.accordion-item {
+    background: #ffffff0f;
+    border: 1px solid #ffffff33;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    padding: 24px 40px;
+    text-align: left;
+
+}
+
+.accordion-item .accordion-header .accordion-button {
+    background-color: transparent;
+    color: #f5f5f5;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.accordion-item .accordion-header .accordion-button span {
+    position: absolute;
+    right: 10px;
+    font-size: 30px;
+    transition: all .5s;
+}
+
+.accordion-item .accordion-header .accordion-button span.active {
+    transform: rotate(180deg);
+}
+
+.accordion-item .accordion-body {
+    margin-top: 24px;
+    padding: 0;
+}
+
+.accordion-item .accordion-body p {
+    color: #f5f5f5;
+    font-family: Satoshi, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: all .5;
+}
+
+.accordion-collapse {
+    height: 0;
+    max-height: fit-content;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+.accordion-collapse.active {
+    height: 100px;
+    transition: all .5s;
+    overflow: scroll;
+
+}
+
+@media screen and (max-width:992px) {
+
+    .accordion-item {
+        margin-bottom: 16px;
+        padding: 16px;
+        text-align: left
+    }
+
+    .accordion-item .accordion-header .accordion-button {
+        font-size: 16px;
+        font-weight: 500
+    }
+
+    .accordion-item .accordion-body {
+        margin-top: 12px;
+        padding: 0
+    }
+
+    .accordion-item .accordion-body p {
+        font-size: 15px
+    }
+}

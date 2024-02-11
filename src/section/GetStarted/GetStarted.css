@@ -1,6 +1,5 @@
 .get-started {
     width: 100%;
-    text-align: center;
     padding: 80px 120px;
     background-color: #212529;
     display: flex;
@@ -18,6 +17,7 @@
     justify-content: flex-start;
     flex-direction: column;
     color: white;
+    row-gap: 20px;
 }
 
 .get-started-l {
@@ -32,13 +32,15 @@
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    flex:1;
+    flex: 1;
 }
 
 @media (max-width: 991px) {
     .get-started {
         flex-direction: column-reverse;
         gap: 50px;
+        text-align: center;
+
     }
 
     .get-started-l,
@@ -56,7 +58,11 @@
 
     .get-started-r .get-started-button .TryFreeButton {
         width: 140px;
-          margin-top: 10px;
+        margin-top: 10px;
         margin-left: 0px;
+    }
+
+    .get-started-l .store img {
+        scale: .5;
     }
 }

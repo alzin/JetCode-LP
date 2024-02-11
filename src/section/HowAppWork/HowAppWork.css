@@ -1,3 +1,79 @@
-.HowAppWork {
-    margin-top: 50px;
-}
+ .how-app-work {
+     min-height: 100vh;
+     padding-top: 90px;
+     padding-bottom: 200px
+ }
+
+ .how-app-work .container {
+     max-width: 1200px;
+     padding-top: 36px;
+     text-align: center
+ }
+
+ .how-app-work .container h2 {
+     color:black;
+     font-size: 56px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: normal;
+     margin: 0;
+     padding: 0;
+ }
+
+ .how-app-work .container p {
+     color: black;
+     font-size: 24px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: 120%;
+     margin: 16px 0 0;
+     padding: 0
+ }
+
+ .how-app-work .container .video-container {
+     margin-top: 80px
+ }
+
+ .how-app-work .container .video-container video {
+     transform: perspective(1000px) rotateX(30deg);
+     width: 100%
+ }
+
+ @media screen and (max-width:1450px) {
+     .how-app-work {
+         padding-top: 45px;
+         padding-bottom: 90px
+     }
+
+     .how-app-work .container {
+         max-width: 900px
+     }
+ }
+
+ @media screen and (max-width:992px) {
+     .how-app-work {
+         background-color: #110d18;
+         min-height: 0;
+         padding: 0 20px;
+
+     }
+
+     .how-app-work .container h2 {
+         color:white;
+         font-size: 24px
+     }
+
+     .how-app-work .container p {
+         color: #f5f5f5;
+         font-size: 16px
+     }
+
+     .how-app-work .container .video-container {
+         margin-top: 0;
+         padding-top: 36px
+     }
+
+     .how-app-work .container .video-container video {
+         transform: none
+     }
+ }

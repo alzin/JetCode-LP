@@ -1,8 +1,10 @@
 import './Faqs.css'
 
+import FreqQuestion from '../../section/FreqQuestion/FreqQuestion'
+
 const Faqs = () => {
   return (
-  <div>Faqs</div>
+    <><FreqQuestion /></>
   )
 }
 

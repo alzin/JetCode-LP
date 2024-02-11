@@ -1,0 +1,59 @@
+.super-charge-employee .box-container .box-2 {
+    padding: 30px 44px;
+    text-align: center;
+    min-width: 250px;
+}
+
+.super-charge-employee .box-container .box-2 h3 {
+    color: #2c2c2c;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 40px 0 0;
+    padding: 0
+}
+
+.super-charge-employee .box-container .box-2 p {
+    color: #2c2c2c;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 12px 0 0;
+    padding: 0
+}
+
+.super-charge-employee .img-box {
+    min-height: 160px
+}
+
+.super-charge-employee .box-container .box-2 img {
+    max-width: 100%
+}
+
+@media screen and (max-width:1400px) {
+    .box-container .box-2 {
+        padding: 30px 36px;
+        text-align: center;
+    }
+
+    .box-container .box-2 h3 {
+        font-size: 26px
+    }
+
+    .box-container .box-2 p {
+        font-size: 18px
+    }
+
+    .box-container .box-2 img {
+        max-width: 100%
+    }
+}
+
+@media screen and (max-width:992px) {
+    .box-2 {
+        flex: 1;
+    }
+
+
+}

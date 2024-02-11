@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom'
-
+import { useState, useEffect } from 'react'
 
 // css files
 import './DropDown.css'
 
+// Solution  Drop Down//
 
 const SolutionDropDown = (props) => {
     return (
@@ -16,4 +17,43 @@ const SolutionDropDown = (props) => {
     )
 }
 
-export { SolutionDropDown }
+
+
+
+
+
+// accordion//
+
+const FaqsDropDown = (props) => {
+
+    const [showResp, setShowResp] = useState(false)
+
+    useEffect(() => {
+        setShowResp(false)
+    }, [])
+
+
+    //show accordion-body in accordion
+    const handleShowAccordion = () => {
+        setShowResp(pre => !pre);
+    }
+
+
+    return (
+        <div className="accordion-item ">
+            <h3 className="accordion-header">
+                <a className="accordion-button" onClick={handleShowAccordion}>
+                    <span className={showResp ? "active" : ""}>&#10225;</span>
+                    <p>{props.ques}</p>
+                </a>
+            </h3>
+            <div className={showResp ? "accordion-collapse active" : "accordion-collapse"}>
+                <div className="accordion-body" >
+                    <p>{props.resp}</p>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export { SolutionDropDown, FaqsDropDown }

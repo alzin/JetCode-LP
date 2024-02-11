@@ -11,6 +11,7 @@
     color: #fff !important;
     line-height: 19px;
     cursor: pointer;
+    z-index: 99;
 }
 
 @media (max-width: 991px) {
