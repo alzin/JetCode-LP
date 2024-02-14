@@ -1,7 +1,9 @@
  .how-app-work {
      min-height: 100vh;
      padding-top: 90px;
-     padding-bottom: 200px
+     padding-bottom: 200px;
+     overflow-x: hidden;
+
  }
 
  .how-app-work .container {
@@ -11,6 +13,7 @@
  }
 
  .how-app-work .container h2 {
+    z-index: 999;
      color:black;
      font-size: 56px;
      font-style: normal;
@@ -27,11 +30,14 @@
      font-weight: 500;
      line-height: 120%;
      margin: 16px 0 0;
-     padding: 0
+     padding: 0;
+     z-index: 99;
  }
 
  .how-app-work .container .video-container {
-     margin-top: 80px
+    z-index: -1;
+     margin-top: 80px;
+     
  }
 
  .how-app-work .container .video-container video {

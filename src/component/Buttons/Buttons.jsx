@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom'
 //assets files
 import './Buttons.css'
 
-const TryFreeButton = () => {
+const Buttons = (props) => {
     return (
-        <Link to='/' className="TryFreeButton">
-            Try For Free
+        <Link to={props.to} className={props.className}>
+            {props.content}
         </Link>
     )
 }
 
-export { TryFreeButton }
+export default Buttons

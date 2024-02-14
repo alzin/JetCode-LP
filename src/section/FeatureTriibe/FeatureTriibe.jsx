@@ -1,8 +1,16 @@
 import './FeatureTriibe.css'
 
+import FeatureCard from '../../component/FeatureCard/FeatureCard'
+
+import FeatureTriibeData from '../../data/FeatureTriibeData'
+
 const FeatureTriibe = () => {
     return (
-        <div>FeatureTriibe</div>
+        <section className="feature-triibe">
+            {FeatureTriibeData.map((item, index) =>
+                <FeatureCard key={index} data={item} />
+            )}
+        </section>
     )
 }
 

@@ -2,11 +2,11 @@
     background: #110d18;
     margin-top: 0;
     padding: 134px 0;
+    overflow-x: hidden;
 }
 
 .freq-question .container {
     padding: 0 180px;
-    text-align: centler;
 }
 
 .freq-question .container h2 {
@@ -16,7 +16,9 @@
     font-weight: 600;
     line-height: normal;
     margin: 0;
-    padding: 0
+    padding: 0;
+    text-align: center;
+
 }
 
 .freq-question .container .accordion {
@@ -40,7 +42,6 @@
 
     .freq-question .container {
         padding: 0 20px;
-        text-align: center
     }
 
     .freq-question .container h2 {

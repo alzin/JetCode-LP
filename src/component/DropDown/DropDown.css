@@ -27,8 +27,7 @@
 }
 
 .accordion-item .accordion-header .accordion-button {
-    background-color: transparent;
-    color: #f5f5f5;
+    color: white;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
@@ -58,7 +57,7 @@
 }
 
 .accordion-item .accordion-body p {
-    color: #f5f5f5;
+    color: white;
     font-family: Satoshi, sans-serif;
     font-size: 20px;
     font-style: normal;
@@ -80,7 +79,6 @@
 .accordion-collapse.active {
     height: 100px;
     transition: all .5s;
-    overflow: scroll;
 
 }
 
@@ -99,10 +97,21 @@
 
     .accordion-item .accordion-body {
         margin-top: 12px;
-        padding: 0
+        padding: 0;
     }
 
     .accordion-item .accordion-body p {
-        font-size: 15px
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .accordion-item .accordion-header .accordion-button {
+        font-size: 13px;
+    }
+
+    .accordion-item .accordion-header .accordion-button span {
+        right: -10px;
+        font-size: 20px;
     }
 }

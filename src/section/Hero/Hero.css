@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    overflow-x: hidden;
 }
 
 .hero .hero-l {
@@ -147,10 +148,6 @@
 
 }
 
-.hero .hero-l h1 .slideWord span:nth-child(2),
-.hero .hero-l h1 .slideWord span:nth-child(3) {
-    /* display: none; */
-}
 
 
 .hero .hero-l p {
@@ -205,7 +202,8 @@
 
     }
 
-    .hero .hero-l .hero-button .TryFreeButton {
+    .hero .hero-l .hero-button .TryFreeButton,
+    .hero .hero-l .hero-button .BookADemo {
         margin-top: 0px;
         margin-left: 0px;
         width: calc(100vw - 50px);
@@ -213,12 +211,5 @@
 
     .hero .hero-r img {
         display: none;
-    }
-}
-
-@media (max-width: 768px) {
-    .hero .hero-l .top-post {
-        /* flex-direction: column; */
-        /* align-items: flex-start; */
     }
 }

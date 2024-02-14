@@ -1,0 +1,201 @@
+ .tab-content .tab-pane {
+     padding-top: 12px;
+     transition: all .7s;
+     animation: fade 1s linear;
+ }
+
+ @keyframes fade {
+     from {
+         opacity: 0;
+     }
+
+     to {
+         opacity: 1;
+     }
+ }
+
+ .tab-content .tab-pane.active {
+     opacity: 1;
+ }
+
+
+ .tab-content .tab-pane .top-tab-section article {
+     align-items: center;
+     display: flex;
+     text-transform: uppercase;
+ }
+
+ .tab-content .tab-pane .top-tab-section article h4 {
+     color: #67abfb;
+     font-family: Satoshi, sans-serif;
+     font-size: 18px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: 130%;
+     margin: 0 0 0 16px;
+     padding: 0
+ }
+
+ .tab-content .tab-pane .top-tab-section article span {
+     align-items: center;
+     background: rgba(103, 171, 251, .06);
+     border: .833px solid hsla(0, 0%, 100%, .3);
+     border-radius: 63.333px;
+     display: flex;
+     height: 56px !important;
+     justify-content: center;
+     width: 56px !important
+ }
+
+ .tab-content .tab-pane .top-tab-section article span svg {
+     width: 27px
+ }
+
+ .tab-content .tab-pane .tab-body {
+     display: flex;
+     justify-content: space-between;
+     margin-top: 8px
+ }
+
+ .tab-content .tab-pane .tab-body .tab-body-left {
+     width: 44%
+ }
+
+ .tab-content .tab-pane .tab-body .tab-body-left h3 {
+     color: #f5f5f5;
+     font-family: Satoshi, sans-serif;
+     font-size: 40px;
+     font-style: normal;
+     font-weight: 600;
+     line-height: 120%;
+     margin: 24px 0 0;
+     padding: 0
+ }
+
+ .tab-content .tab-pane .tab-body .tab-body-left p {
+     color: #c9c8c8;
+     font-family: Satoshi, sans-serif;
+     font-size: 20px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 140%;
+     margin-top: 24px
+ }
+
+ .tab-content .tab-pane .tab-body .tab-body-left .BookADemo {
+     background: #fff;
+     border-radius: 43px;
+     display: inline-block;
+     margin-top: 50px;
+     padding: 14px 24px;
+     color: #000 !important;
+     font-size: 15px;
+
+ }
+
+ .tab-content .tab-pane .tab-body .tab-body-right {
+     width: 44%
+ }
+
+ .tab-content .tab-pane .tab-body .tab-body-right video {
+     max-height: 350px;
+     max-width: 100%;
+     width: 100%
+ }
+
+
+
+
+ @media screen and (max-width:1450px) {
+     .tab-content .tab-pane {
+         padding-top: 12px
+     }
+
+     .tab-content .tab-pane .top-tab-section span h4 {
+         font-size: 16px
+     }
+
+     .tab-content .tab-pane .top-tab-section span img {
+         width: 48px !important
+     }
+
+     .tab-content .tab-pane .tab-body {
+         margin-top: 0
+     }
+
+     .tab-content .tab-pane .tab-body .tab-body-left h3 {
+         font-size: 40px;
+         margin-top: 20px
+     }
+
+     .tab-content .tab-pane .tab-body .tab-body-left p {
+         font-size: 20px;
+         margin-top: 20px
+     }
+
+     .tab-content .tab-pane .tab-body .tab-body-left .btn-demo {
+         margin-top: 36px
+     }
+
+ }
+
+
+ @media screen and (max-width:992px) {
+     .tab-content .tab-pane {
+         padding-top: 12px
+     }
+
+     .tab-content .tab-pane .top-tab-section article h4 {
+         font-size: 14px;
+         margin-left: 14px
+     }
+
+     .tab-content .tab-pane .top-tab-section article span {
+         border-radius: 63.333px;
+         height: 42px !important;
+         width: 42px !important
+     }
+
+     .tab-content .tab-pane .top-tab-section article span svg {
+         width: 18px
+     }
+
+     .tab-content .tab-pane .tab-body {
+         display: block
+     }
+
+     .tab-content .tab-pane .tab-body .tab-body-left {
+         width: 100%
+     }
+
+     .tab-content .tab-pane .tab-body .tab-body-left h3 {
+         font-size: 24px;
+         margin-top: 16px
+     }
+
+     .tab-content .tab-pane .tab-body .tab-body-left p {
+         font-size: 16px;
+         margin-top: 12px
+     }
+
+     .tab-content .tab-pane .tab-body .tab-body-left .BookADemo {
+         display: none
+     }
+
+     .tab-content .tab-pane .tab-body .tab-body-right,
+     .tab-content .tab-pane .tab-body .tab-body-right video {
+         width: 100%
+     }
+
+     .tab-content .tab-pane .tab-body.tab-body-1 {
+         min-height: 396px
+     }
+
+     .tab-content .tab-pane .tab-body.tab-body-2 {
+         min-height: 480px
+     }
+
+     .tab-content .tab-pane .tab-body.tab-body-3 {
+         min-height: 396px
+     }
+ }

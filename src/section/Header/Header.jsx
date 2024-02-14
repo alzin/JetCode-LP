@@ -10,7 +10,7 @@ import { IoAnalytics } from "react-icons/io5"
 
 //components
 import Burger from '../../component/Burger/Burger'
-import { TryFreeButton } from '../../component/Buttons/Buttons'
+import Buttons from '../../component/Buttons/Buttons'
 import { SolutionDropDown } from '../../component/DropDown/DropDown'
 
 const Header = () => {
@@ -65,7 +65,7 @@ const Header = () => {
             <li><Link to='/pricing'>Pricing</Link></li>
             <li><Link to='/faqs'>FAQS</Link></li>
           </ul>
-          <TryFreeButton />
+          <Buttons content='Try For Free' to='/' className="TryFreeButton" />
         </nav>
 
       </div>

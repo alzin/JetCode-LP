@@ -6,7 +6,7 @@ import GoogleStore from '../../assets/images/google-play.svg'
 
 
 //component
-import { TryFreeButton } from '../../component/Buttons/Buttons'
+import Buttons from '../../component/Buttons/Buttons'
 
 const GetStarted = () => {
     return (
@@ -24,8 +24,8 @@ const GetStarted = () => {
             <div className="get-started-r">
                 <h2>Get started with personal AI manager now</h2>
                 <div className="get-started-button">
-                    <TryFreeButton />
-                    <TryFreeButton />
+                    <Buttons content='Try for free' to='/' className="TryFreeButton" />
+                    <Buttons content='Book demo' to='/' className="TryFreeButton" />
                 </div>
             </div>
         </div>

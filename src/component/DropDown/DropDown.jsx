@@ -42,10 +42,10 @@ const FaqsDropDown = (props) => {
     return (
         <div className="accordion-item ">
             <h3 className="accordion-header">
-                <a className="accordion-button" onClick={handleShowAccordion}>
+                <div className="accordion-button" onClick={handleShowAccordion}>
                     <span className={showResp ? "active" : ""}>&#10225;</span>
                     <p>{props.ques}</p>
-                </a>
+                </div>
             </h3>
             <div className={showResp ? "accordion-collapse active" : "accordion-collapse"}>
                 <div className="accordion-body" >

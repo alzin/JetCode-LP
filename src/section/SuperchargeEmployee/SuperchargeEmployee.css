@@ -1,7 +1,8 @@
 .super-charge-employee {
     min-height: 100vh;
     padding: 100px 90px;
-    text-align: center
+    text-align: center;
+    overflow-x: hidden;
 }
 
 .super-charge-employee h2 {
@@ -83,12 +84,29 @@
 
 @media screen and (max-width:992px) {
     .super-charge-employee {
-        padding: 100px 25px;
+        padding: 100px 10px;
 
     }
 
     .super-charge-employee .box-container {
         flex-wrap: wrap;
     }
+
+    .super-charge-employee h2 {
+        font-size: 35px
+    }
+
+    .super-charge-employee h5 {
+        font-size: 15px
+    }
+
+    .super-charge-employee .box-container .box-2 h3 {
+        font-size: 20px
+    }
+
+    .super-charge-employee .box-container .box-2 p {
+        font-size: 12px
+    }
+
 
 }
