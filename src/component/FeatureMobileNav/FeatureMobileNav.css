@@ -6,7 +6,7 @@
     .mobile-nav-section {
         display: flex;
         justify-content: space-around;
-        margin-top: 40px
+        margin-top: 0px
     }
 
     .mobile-nav-section .mobile-pills {

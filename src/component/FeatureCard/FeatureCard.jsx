@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 // css file
 import './FeatureCard.css'
@@ -7,15 +7,11 @@ import './FeatureCard.css'
 import FeatureMobileNav from '../../component/FeatureMobileNav/FeatureMobileNav'
 import FeatureNavContent from '../../component/FeatureNavContent/FeatureNavContent'
 import FeatureNavIndicator from '../../component/FeatureNavIndicator/FeatureNavIndicator'
-import { useParallax } from 'react-scroll-parallax'
 
 
 const FeatureCard = (props) => {
 
-    const parallax = useParallax({
-        translateX: [-50, 55],
-        translateY: [-10, 10]
-    })
+
 
     const [activeIndex, setActiveIndex] = useState(0)
     const [featureNavbar, setFeatureNavbar] = useState(props.data.FeatureNavbar)
@@ -39,15 +35,37 @@ const FeatureCard = (props) => {
         else handelActive(i)
     }
 
+    const card = useRef("")
+    const [doT, setDoT] = useState(false)
+    const handleScroll = () => {
+        const cardHeight = card.current.offsetHeight
+        const cardOffsetTop = card.current.offsetTop + cardHeight - 150
+        const scrollY = window.scrollY
+
+
+        if (scrollY >= cardOffsetTop) {
+            setDoT(.7)
+        }
+        else {
+            setDoT(.9)
+        }
+    }
 
     useEffect(() => {
-        handelActive(activeIndex)
-    }, [])
+        handelActive(activeIndex);
 
+        // parallax scrolling only if width more than 992 px
+        if (window.innerWidth > 992) {
+            window.addEventListener("scroll", handleScroll)
+            return () => {
+                window.removeEventListener("scroll", handleScroll)
+            }
+        }
+    }, [activeIndex])
 
     return (
-        <div className="feed-card" ref={parallax.ref}>
-            <section className="feed-section">
+        <div className="feed-card" ref={card} style={{ "transform": `scale(${doT})` }}>
+            <div className="feed-section">
                 <div className="container">
                     <div className="feed-head">
                         <div className="head-section">
@@ -58,7 +76,7 @@ const FeatureCard = (props) => {
                             <img src={props.data.FeatureImg} alt={props.data.FeatureTitle} />
                         </div>
                     </div>
-                    {/* --------------------------- */}
+
                     <div className="feed-content">
                         <FeatureNavIndicator data={featureNavbar} handelActive={handelActive} activeIndex={activeIndex} />
                         <div className="tab-content">
@@ -69,8 +87,8 @@ const FeatureCard = (props) => {
                         <FeatureMobileNav data={featureNavbar} activeIndex={activeIndex} setActiveIndex={activateIndex} />
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </div >
     )
 }
 

@@ -41,7 +41,8 @@
  }
 
  .how-app-work .container .video-container video {
-     transform: perspective(1000px) rotateX(30deg);
+     /* transform: perspective(1000px) rotateX(30deg); */
+     /* rotate: (30deg,0deg); */
      width: 100%
  }
 
