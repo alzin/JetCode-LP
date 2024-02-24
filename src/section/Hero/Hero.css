@@ -145,9 +145,13 @@
 *************************/
 @media (max-width: 991px) {
 
+    .blur {
+        display: none;
+    }
+
     .hero .hero-l h1 {
         /* flex: 1; */
-        width: 90vw;
+        width: 80vw;
         max-width: 550px;
         margin-top: 30px;
         font-size: 30px;

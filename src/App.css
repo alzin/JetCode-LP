@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: center;
     z-index: 99999999999;
+    overflow-x: hidden;
   }
   
   .loading::before {

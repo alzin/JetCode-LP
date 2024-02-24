@@ -31,7 +31,7 @@ img {
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   font-family: satoshi, sans-serif;
 }
 
@@ -69,6 +69,7 @@ button {
   border-radius: 50%;
   filter: blur(200px);
   z-index: -9;
+  overflow-x: hidden;
 }
 
 
