@@ -1,7 +1,6 @@
 header {
     width: 100vw;
     height: 100px;
-    overflow-x: hidden;
 }
 
 header .container {
@@ -13,8 +12,8 @@ header .container {
 }
 
 header .container .logo {
-    /* width: 75%; */
-    flex: 2;
+    /* min-width: 60%; */
+    width: 70%;
 }
 
 header .container .burger {
@@ -64,14 +63,13 @@ header .container nav ul .list ul {
     position: absolute;
     top: 50px;
     left: -50px;
-    height: 250px;
+    min-height: 250px;
     border: 1px solid #ccc;
-    z-index: 9999;
+    z-index: 999999 !important;
     background-color: var(--white-color);
     border-radius: var(--main-radius);
     min-width: 422px;
     padding: 12px 8px;
-
     display: none;
 }
 
@@ -102,14 +100,18 @@ header .container nav ul .list ul li {
 
 
 
-
+@media (max-width: 1200px) {
+    header .container .logo {
+        width: 50%;
+    }
+}
 
 /************************* 
   start responsive header
 *************************/
 @media (max-width: 992px) {
     header .container nav {
-        z-index: 99999999;
+        z-index: 9999;
         width: 100vw;
         /* height: fit-content; */
         height: 100vh;
@@ -173,7 +175,7 @@ header .container nav ul .list ul li {
 
     header .container .burger {
         display: block;
-        z-index: 9999999999 !important;
+        z-index: 99999999999999 !important;
     }
 
     header .container .burger.active {

@@ -9,7 +9,7 @@
     font-weight: 500;
     padding: 20px;
     cursor: pointer;
-    z-index: 99;
+    z-index: 9;
     background: var(--primary-gradient);
     border-radius: calc(var(--main-radius) * .5);
     color: var(--white-color) !important;
