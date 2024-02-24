@@ -1,6 +1,7 @@
 header {
     width: 100vw;
     height: 100px;
+    overflow-x: hidden;
 }
 
 header .container {
@@ -110,8 +111,9 @@ header .container nav ul .list ul li {
     header .container nav {
         z-index: 99999999;
         width: 100vw;
-        height: fit-content;
-        min-height: 100vh;
+        /* height: fit-content; */
+        height: 100vh;
+        max-width: 200vh;
         position: fixed;
         top: 0;
         left: 0;
@@ -122,6 +124,7 @@ header .container nav ul .list ul li {
         overflow-x: hidden;
         overflow-y: scroll;
         padding-top: 150px;
+        /* display: flex; */
         display: none;
 
     }
@@ -161,8 +164,11 @@ header .container nav ul .list ul li {
     }
 
     header .container nav .TryFreeButton {
-        width: 90vw;
+        width: 80vw;
         margin-top: 50px;
+        max-height: 50px !important;
+        margin-left: 0;
+        margin-bottom: 20px;
     }
 
     header .container .burger {
