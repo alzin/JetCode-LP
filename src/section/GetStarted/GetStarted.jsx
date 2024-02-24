@@ -1,9 +1,10 @@
+// css files
 import './GetStarted.css'
 
+// assets
 import Logo from '../../assets/images/logo-new.svg'
 import AppelStore from '../../assets/images/apple-store.svg'
 import GoogleStore from '../../assets/images/google-play.svg'
-
 
 //component
 import Buttons from '../../component/Buttons/Buttons'

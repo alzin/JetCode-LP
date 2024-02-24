@@ -11,16 +11,11 @@
 
 }
 
-/* .nav-pills li:nth-child(1) {
-    max-width: 808px;
-} */
-
-
 .nav-pills li {
     z-index: 2;
     cursor: pointer;
-    width: 200px;
-    max-width: 200px;
+    /* width: 200px; */
+    max-width: 300px;
     text-align: center;
 }
 
@@ -30,7 +25,6 @@
     border-radius: 79px;
     color: #fff;
     display: flex;
-    font-family: Satoshi, sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -96,8 +90,8 @@
     position: absolute;
     transition: all 1s;
     left: 0px;
-    min-width: 200px;
-    max-width: 232px;
+    /* min-width: 200px; */
+    max-width: 300px;
 }
 
 .nav-pills .panel-background.active {

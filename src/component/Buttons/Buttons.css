@@ -3,16 +3,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 140px;
-    height: 50px;
-    font-size: 18px;
+    min-width: fit-content;
+    height: 46px;
+    font-size: var(--main-font-size);
     font-weight: 500;
-    background: linear-gradient(93deg, #9e5cf4 .87%, #5b69e6 93.09%);
-    border-radius: 8px;
-    color: #fff !important;
-    line-height: 19px;
+    padding: 20px;
     cursor: pointer;
     z-index: 99;
+    background: var(--primary-gradient);
+    border-radius: calc(var(--main-radius) * .5);
+    color: var(--white-color) !important;
+    line-height: 19px;
+    text-decoration: none;
+}
+
+.BookADemo {
+    background: var(--white-color);
+    border: 1px solid var(--main-color-2);
+    color: #5b69e6 !important;
 }
 
 @media (max-width: 991px) {
@@ -21,6 +29,6 @@
     .BookADemo {
         margin-top: 100px;
         margin-left: 30px;
-        width: calc(100vw - 60px);
+        flex: 1;
     }
 }

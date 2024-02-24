@@ -12,7 +12,8 @@ header .container {
 }
 
 header .container .logo {
-    width: 75%;
+    /* width: 75%; */
+    flex: 2;
 }
 
 header .container .burger {
@@ -31,16 +32,17 @@ header .container nav ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 46px;
 
 }
 
 header .container nav ul li {
     padding-right: 50px;
     margin: 5px;
-    font-size: 18px;
+    font-size: var(--main-font-size);
     font-weight: 500;
     line-height: 1.5;
-    color: #212529;
+    color: var(--dark-color);
     cursor: pointer;
     z-index: 99;
 
@@ -61,12 +63,13 @@ header .container nav ul .list ul {
     position: absolute;
     top: 50px;
     left: -50px;
-    width: 400px;
     height: 250px;
     border: 1px solid #ccc;
-    border-radius: 10px;
     z-index: 9999;
-    background-color: white;
+    background-color: var(--white-color);
+    border-radius: var(--main-radius);
+    min-width: 422px;
+    padding: 12px 8px;
 
     display: none;
 }
@@ -97,14 +100,6 @@ header .container nav ul .list ul li {
 }
 
 
-header .container nav ul .list ul li:hover .nav-icon {
-    background-color: #9093f6;
-
-}
-
-header .container nav ul .list ul li:hover {
-    background-color: #aaa;
-}
 
 
 
@@ -113,19 +108,21 @@ header .container nav ul .list ul li:hover {
 *************************/
 @media (max-width: 992px) {
     header .container nav {
-        display: none;
         z-index: 99999999;
         width: 100vw;
-        height: 100vh;
+        height: fit-content;
+        min-height: 100vh;
         position: fixed;
-        top: 0px;
+        top: 0;
         left: 0;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         justify-content: flex-start;
         background: white;
-        overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: scroll;
         padding-top: 150px;
+        display: none;
 
     }
 
@@ -135,11 +132,13 @@ header .container nav ul .list ul li:hover {
         gap: 10px;
         padding-left: 20px;
         width: 100%;
+        height: fit-content;
     }
 
     header .container nav ul li {
         font-size: 22px;
         font-weight: bold;
+
     }
 
     header .container nav ul .list ul {
@@ -161,7 +160,10 @@ header .container nav ul .list ul li:hover {
         left: 100px;
     }
 
-
+    header .container nav .TryFreeButton {
+        width: 90vw;
+        margin-top: 50px;
+    }
 
     header .container .burger {
         display: block;

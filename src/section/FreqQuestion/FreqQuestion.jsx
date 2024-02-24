@@ -1,9 +1,12 @@
+// css files
 import './FreqQuestion.css'
 
-
+// faqs data
 import FaqsData from '../../data/FaqsDropDown'
 
+// componenet
 import { FaqsDropDown } from '../../component/DropDown/DropDown'
+
 
 const FreqQuestion = () => {
     return (

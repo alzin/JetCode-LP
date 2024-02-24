@@ -4,26 +4,22 @@ import { useState, useEffect } from 'react'
 // css files
 import './DropDown.css'
 
-// Solution  Drop Down//
 
+
+// Solution  Drop Down//
 const SolutionDropDown = (props) => {
     return (
         <li>
             <Link to={props.to}>
                 <span className='nav-icon'>{props.icon}</span>
-                <span>{props.name}</span>
+                <span className='nav-title'>{props.name}</span>
             </Link>
         </li>
     )
 }
 
 
-
-
-
-
-// accordion//
-
+// faqs accordion//
 const FaqsDropDown = (props) => {
 
     const [showResp, setShowResp] = useState(false)

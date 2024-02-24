@@ -1,20 +1,28 @@
  .how-app-work {
-     min-height: 100vh;
+     min-height: 200vh;
      padding-top: 90px;
      padding-bottom: 200px;
-     overflow-x: hidden;
+     position: static;
 
+     /* overflow-x: hidden; */
  }
 
  .how-app-work .container {
      max-width: 1200px;
      padding-top: 36px;
-     text-align: center
+     text-align: center;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+
+     position: sticky;
+     top: -60px;
  }
 
  .how-app-work .container h2 {
-    z-index: 999;
-     color:black;
+     z-index: 999;
+     color: black;
      font-size: 56px;
      font-style: normal;
      font-weight: 700;
@@ -35,15 +43,19 @@
  }
 
  .how-app-work .container .video-container {
-    z-index: -1;
+     z-index: -1;
      margin-top: 80px;
-     
+     /* display: flex;
+     align-items: center;
+     justify-content: center; */
+     width: 70vw;
+
+
  }
 
  .how-app-work .container .video-container video {
      /* transform: perspective(1000px) rotateX(30deg); */
-     /* rotate: (30deg,0deg); */
-     width: 100%
+     width: 100%;
  }
 
  @media screen and (max-width:1450px) {
@@ -66,7 +78,7 @@
      }
 
      .how-app-work .container h2 {
-         color:white;
+         color: white;
          font-size: 24px
      }
 

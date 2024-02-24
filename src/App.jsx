@@ -1,3 +1,7 @@
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+
+// css files
 import './App.css'
 
 // sections
@@ -15,30 +19,35 @@ import Analytics from './pages/Analytics/Analytics'
 import WhitepaperRequest from './pages/WhitepaperRequest/WhitepaperRequest'
 
 
-
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-
-
-
-
 const App = () => {
+
+  const [isLoading, setIsLoading] = useState(false)
+
+  useEffect(() => {
+      setIsLoading(true);
+  }, [isLoading])
+
   return (
     <>
-      <Router basename={'/TriibeTask'}>
-        <Header />
-        <Container>
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/faqs' element={<Faqs />} />
-            <Route path='/pricing' element={<Pricing />} />
-            <Route path='/employee-engagement' element={<EmployeeEngagement />} />
-            <Route path='/wellness' element={<Wellness />} />
-            <Route path='/analytics' element={<Analytics />} />
-            <Route path='/whitepaper-request' element={<WhitepaperRequest />} />
-          </Routes>
-        </Container>
-        <Footer />
-      </Router>
+      {isLoading ?
+        <Router basename={'/TriibeTask'}>
+          <Header />
+          <Container>
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/faqs' element={<Faqs />} />
+              <Route path='/pricing' element={<Pricing />} />
+              <Route path='/employee-engagement' element={<EmployeeEngagement />} />
+              <Route path='/wellness' element={<Wellness />} />
+              <Route path='/analytics' element={<Analytics />} />
+              <Route path='/whitepaper-request' element={<WhitepaperRequest />} />
+            </Routes>
+          </Container>
+          <Footer />
+        </Router>
+        :
+        <div className="loading"></div>
+      }
     </>
   )
 }

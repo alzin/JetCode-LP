@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 
-// css file
+// css files
 import './FeatureCard.css'
 
 // components
@@ -10,8 +10,6 @@ import FeatureNavIndicator from '../../component/FeatureNavIndicator/FeatureNavI
 
 
 const FeatureCard = (props) => {
-
-
 
     const [activeIndex, setActiveIndex] = useState(0)
     const [featureNavbar, setFeatureNavbar] = useState(props.data.FeatureNavbar)
@@ -35,19 +33,23 @@ const FeatureCard = (props) => {
         else handelActive(i)
     }
 
+
+    //scall feature card when scrolling down 
     const card = useRef("")
-    const [doT, setDoT] = useState(false)
+    const [scale, setScale] = useState(.85)
+    
     const handleScroll = () => {
         const cardHeight = card.current.offsetHeight
         const cardOffsetTop = card.current.offsetTop + cardHeight - 150
         const scrollY = window.scrollY
 
-
-        if (scrollY >= cardOffsetTop) {
-            setDoT(.7)
-        }
-        else {
-            setDoT(.9)
+        if (props.id < 2) {
+            if (scrollY >= cardOffsetTop) {
+                setScale(.78)
+            }
+            else {
+                setScale(.85)
+            }
         }
     }
 
@@ -64,7 +66,7 @@ const FeatureCard = (props) => {
     }, [activeIndex])
 
     return (
-        <div className="feed-card" ref={card} style={{ "transform": `scale(${doT})` }}>
+        <div className="feed-card" ref={card} style={{ "transform": `scale(${scale})` }}>
             <div className="feed-section">
                 <div className="container">
                     <div className="feed-head">
@@ -78,7 +80,7 @@ const FeatureCard = (props) => {
                     </div>
 
                     <div className="feed-content">
-                        <FeatureNavIndicator data={featureNavbar} handelActive={handelActive} activeIndex={activeIndex} />
+                        <FeatureNavIndicator data={featureNavbar} indicatorWidth={props.data.indicatorWidth} handelActive={handelActive} activeIndex={activeIndex} />
                         <div className="tab-content">
                             {featureNavbar.map((item, index) =>
                                 <FeatureNavContent key={index} data={item} />

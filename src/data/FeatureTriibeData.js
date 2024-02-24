@@ -21,6 +21,8 @@ import { IoAnalytics } from "react-icons/io5"
 
 const FeatureTriibeData = [
     {
+        "id": 0,
+        "indicatorWidth": 200,
         "FeatureTitle": "Elevating Employee Engagement",
         "FeatureContent": "In today's hybrid work , communication and engagement are more vital than ever. Triibe provides a platform where every voice is heard, every achievement recognized, and every connection is meaningful. ",
         "FeatureImg": Feed1,
@@ -66,6 +68,8 @@ const FeatureTriibeData = [
     },
 
     {
+        "id": 1,
+        "indicatorWidth": 300,
         "FeatureTitle": "Nurturing Employee Wellness",
         "FeatureContent": "Cultivating a workplace that prioritizes the health and happiness of its members, Triibe is dedicated to providing tools that support personal growth and a vibrant office culture.  ",
         "FeatureImg": Wh,
@@ -91,6 +95,8 @@ const FeatureTriibeData = [
             }
         ],
     }, {
+        "id": 2,
+        "indicatorWidth": 300,
         "FeatureTitle": "Fostering Data-Driven Leadership",
         "FeatureContent": "Enhance your leadership with Triibe's comprehensive analytics for informed, data-driven decisions and effective strategic planning. ",
         "FeatureImg": Feed3,

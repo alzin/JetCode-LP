@@ -1,6 +1,7 @@
+// css files
 import './SuperchargeEmployee.css'
 
-
+// assets
 import Ai_1 from '../../assets/images/ai_1.svg'
 import Needle from '../../assets/images/needle.svg'
 import Ai_2 from '../../assets/images/ai_2.svg'

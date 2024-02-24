@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom'
 
-
+// css files
 import './Footer.css'
 
+// component
 import GetStarted from '../../section/GetStarted/GetStarted'
 
 const Footer = () => {

@@ -1,7 +1,6 @@
-
 import { Link } from 'react-router-dom'
 
-//assets files
+//css files
 import './Buttons.css'
 
 const Buttons = (props) => {

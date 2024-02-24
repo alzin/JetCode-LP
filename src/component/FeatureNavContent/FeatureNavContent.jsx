@@ -1,6 +1,7 @@
+// css files
 import './FeatureNavContent.css'
 
-
+//components
 import Buttons from '../../component/Buttons/Buttons'
 
 const FeatureNavContent = (props) => {

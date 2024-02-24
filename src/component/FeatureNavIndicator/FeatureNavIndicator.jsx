@@ -1,3 +1,4 @@
+// css files
 import './FeatureNavIndicator.css'
 
 const FeatureNavIndicator = (props) => {
@@ -6,7 +7,7 @@ const FeatureNavIndicator = (props) => {
         <ul className="nav-pills">
             {
                 props.data && props.data.map((item, index) =>
-                    <li key={index} onClick={() => { props.handelActive(index) }}>
+                    <li key={index} style={{ width: props.indicatorWidth }} onClick={() => { props.handelActive(index) }}>
                         <a className={item.isActive ? "active" : ""} type="button">
                             {item.icon}
                             {item.navItem}
@@ -15,8 +16,8 @@ const FeatureNavIndicator = (props) => {
                 )
             }
 
-            <div className="panel-background active" style={{ "left": props.activeIndex * 202 }}></div>
-        </ul>
+            <div className="panel-background active" style={{ width: props.indicatorWidth, "left": props.activeIndex * (props.indicatorWidth + 2) }}></div>
+        </ul >
     )
 }
 

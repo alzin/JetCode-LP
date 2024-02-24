@@ -20,13 +20,11 @@ const Header = () => {
 
   const location = useLocation()
 
-
   useEffect(() => {
     setShowMenu(false)
     setShowDropDown(false)
     window.scrollTo(0, 0)
   }, [location])
-
 
 
 
@@ -40,7 +38,6 @@ const Header = () => {
   const handleDropDown = () => {
     setShowDropDown(pre => !pre);
   }
-
 
 
   return (
