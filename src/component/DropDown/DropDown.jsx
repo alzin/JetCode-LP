@@ -9,7 +9,7 @@ import './DropDown.css'
 // Solution  Drop Down//
 const SolutionDropDown = (props) => {
     return (
-        <li>
+        <li className='hvr-underline-from-left'>
             <Link to={props.to}>
                 <span className='nav-icon'>{props.icon}</span>
                 <span className='nav-title'>{props.name}</span>

@@ -3,6 +3,8 @@
      padding-top: 90px;
      padding-bottom: 200px;
      position: static;
+     background-color: var(--white-color);
+
 
      /* overflow-x: hidden; */
  }

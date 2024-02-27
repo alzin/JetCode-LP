@@ -33,6 +33,7 @@ img {
 body {
   overflow-x: hidden !important;
   font-family: satoshi, sans-serif;
+    background-color: var(--dark-color);
 }
 
 a {

@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react'
 // css files
 import './App.css'
 
+//loader  
+import Loader from './component/Loader/Loader'
 // sections
 import Container from './section/Container/Container'
 import Footer from './section/Footer/Footer'
@@ -24,7 +26,11 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(false)
 
   useEffect(() => {
+
+    setTimeout(()=>{
       setIsLoading(true);
+    },2000)
+
   }, [isLoading])
 
   return (
@@ -46,7 +52,7 @@ const App = () => {
           <Footer />
         </Router>
         :
-        <div className="loading"></div>
+        <Loader />
       }
     </>
   )

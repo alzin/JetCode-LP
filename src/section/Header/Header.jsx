@@ -44,7 +44,9 @@ const Header = () => {
     <header>
       <div className="container">
         <div className="logo">
-          <img src={logo} alt="logo" />
+          {/* <img src={logo} alt="logo" /> */}
+          {/* <span>Slash AI</span> */}
+          <svg height="100" stroke="#212529" strokeWidth="1" className="text-line"><text dominantBaseline="middle" textAnchor="right" y="50%">Slash AI</text></svg>
         </div>
 
         <Burger showMenu={showMenu} handleMenu={handleMenu} />
@@ -59,10 +61,10 @@ const Header = () => {
                 <SolutionDropDown to='/analytics' icon={<IoAnalytics />} name="Analytics" />
               </ul>
             </li>
-            <li><Link to='/pricing'>Pricing</Link></li>
-            <li><Link to='/faqs'>FAQS</Link></li>
+            <li className='hvr-underline-from-left'><Link to='/pricing'>Pricing</Link></li>
+            <li className='hvr-underline-from-left'><Link to='/faqs'>FAQS</Link></li>
           </ul>
-          <Buttons content='Try For Free' to='/' className="TryFreeButton" />
+          <Buttons content='Try for free' to='/' className="TryFreeButton" />
         </nav>
 
       </div>

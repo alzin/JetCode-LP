@@ -1,0 +1,111 @@
+.price-card {
+    background: linear-gradient(0deg, #302f47, #302f47), #f5f5f5;
+    border-radius: 26px;
+    display: flex;
+    flex-direction: column;
+    padding: 70px 30px 60px;
+    position: relative;
+    text-align: left;
+    width: 33.33%
+}
+
+.price-card h4 {
+    color: var(--white-color);
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 46px;
+    margin: 0;
+    padding: 0
+}
+
+.price-card h4 span {
+    font-size: 17px
+}
+
+.price-card h5 {
+    color: var(--white-color);
+    font-size: 30px;
+    font-weight: 600;
+    margin: 24px 0 0;
+    padding: 0
+}
+
+.price-card p {
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+    margin: 12px 0 0;
+    min-height: 42px;
+    padding: 0;
+    text-align: left
+}
+
+.price-card ul {
+    margin: 24px 0;
+    padding: 0
+}
+
+.price-card ul li {
+    background-image: url(../../assets/images/check-circle-1.svg);
+    background-repeat: no-repeat;
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 17px;
+    padding-left: 30px
+}
+
+.price-card .btn-choose {
+    align-items: center;
+    align-self: stretch;
+    align-self: flex-end;
+    background: #65658a;
+    border-radius: 8px;
+    color: var(--white-color);
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+    gap: 10px;
+    height: 40px;
+    justify-content: center;
+    margin-top: auto;
+    padding: 11px 55px;
+    text-align: center;
+    width: 100%
+}
+
+.price-card .tag {
+    background: #4f4f73;
+    border-radius: 13.5px;
+    color: var(--white-color);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .833px;
+    line-height: normal;
+    padding: 9px 16px;
+    position: absolute;
+    right: 30px;
+    text-align: center;
+    top: 20px
+}
+
+.price-card.glowed {
+    background: linear-gradient(90deg, #9752f2 -5.16%, #8134e7 113.7%);
+    box-shadow: 0 7px 82px 0 rgba(82, 67, 194, .55)
+}
+
+
+.price-card.glowed .btn-choose {
+    background: var(--white-color);
+    color: #5b69e6
+}
+
+@media screen and (max-width:992px) {
+    .price-card {
+        border-radius: 26px;
+        margin-bottom: 40px;
+        width: 100%
+    }
+}
