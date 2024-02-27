@@ -237,15 +237,6 @@ header .container nav ul .list ul li {
     display: flex !important;
 }
 
-/* ------- */
-
-/* header .container .logo span {
-    color: var(--main-color-1);
-    font-size: calc(var(--main-font-size) * 2);
-    font-weight: 600;
-} */
-
-
 .text-line {
     /* background-color: aqua; */
     stroke-dasharray: 500;
