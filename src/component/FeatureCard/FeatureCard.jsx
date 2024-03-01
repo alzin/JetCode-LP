@@ -37,10 +37,10 @@ const FeatureCard = (props) => {
     //scall feature card when scrolling down 
     const card = useRef("")
     const [scale, setScale] = useState(.85)
-    
+
     const handleScroll = () => {
         const cardHeight = card.current.offsetHeight
-        const cardOffsetTop = card.current.offsetTop + cardHeight - 150
+        const cardOffsetTop = card.current.offsetTop + cardHeight -80
         const scrollY = window.scrollY
 
         if (props.id < 2) {

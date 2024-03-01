@@ -13,13 +13,13 @@ const HowAppWork = () => {
 
 
     useEffect(() => {
-        const videoHeight = video.current.offsetHeight - 200
+        const videoHeight = video.current.offsetHeight
         const videoOffsetTop = video.current.offsetTop
 
         const handleScroll = () => {
             const scrollY = window.scrollY
 
-            console.log(scrollY, " ", videoOffsetTop, " ", videoHeight)
+            // console.log(scrollY, " ", videoOffsetTop, " ", videoHeight)
 
             // if scrollY between (videoOffsetTop) and  (videoOffsetTop + videoHeight) active parallax in video  
             if (scrollY >= videoOffsetTop && scrollY <= videoOffsetTop + videoHeight) {

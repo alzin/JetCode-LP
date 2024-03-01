@@ -19,7 +19,7 @@
      flex-direction: column;
 
      position: sticky;
-     top: -60px;
+     top: 50px;
  }
 
  .how-app-work .container h2 {
@@ -33,20 +33,10 @@
      padding: 0;
  }
 
- .how-app-work .container p {
-     color: black;
-     font-size: 24px;
-     font-style: normal;
-     font-weight: 500;
-     line-height: 120%;
-     margin: 16px 0 0;
-     padding: 0;
-     z-index: 99;
- }
 
  .how-app-work .container .video-container {
      z-index: -1;
-     margin-top: 80px;
+     margin-top: 40px;
      /* display: flex;
      align-items: center;
      justify-content: center; */

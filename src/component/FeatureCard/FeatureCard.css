@@ -9,17 +9,17 @@
 
 .feed-card:nth-child(1) {
     position: sticky;
-    top: -60px;
+    top: 4%;
 }
 
 .feed-card:nth-child(2) {
     position: sticky;
-    top: -70px;
+    top: 5%;
 }
 
 .feed-card:nth-child(3) {
-    position: sticky;
-    top: -80px;
+    /* position: sticky; */
+    /* top: 40px; */
 }
 
 .feed-section {
@@ -34,10 +34,11 @@
 
 .feed-section .container {
     max-height: 150vh;
+    min-height: 100vh;
     background: linear-gradient(180deg, #2b1e41, rgba(43, 30, 65, 0)), #110d18;
     border-radius: 30px;
     box-shadow: 0 -4px 38px 0 rgba(0, 0, 0, .25);
-    padding: 79px 120px
+    padding: 79px 120px;
 }
 
 .feed-section .container .feed-head {
@@ -150,6 +151,7 @@
     }
 
     .feed-section .container {
+        min-height: fit-content;
         background: linear-gradient(180deg, #2b1e41, #2b1e41), #110d18;
         border-radius: 0;
         box-shadow: 0 -1.22506px 11.63811px 0 rgba(0, 0, 0, .25);
