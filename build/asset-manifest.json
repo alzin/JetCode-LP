@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/TriibeTask/static/css/main.b9256c6f.css",
+    "main.js": "/TriibeTask/static/js/main.20d8e60b.js",
+    "static/media/Tribe_product Hunt_2024-vp9-chrome.mp4": "/TriibeTask/static/media/Tribe_product Hunt_2024-vp9-chrome.74c2f0086be74b6bf4ab.mp4",
+    "static/media/Ai-2.png": "/TriibeTask/static/media/Ai-2.f4d75b42f4cbc799f15c.png",
+    "static/media/recognition.webm": "/TriibeTask/static/media/recognition.187334c5f1ee70a85658.webm",
+    "static/media/profiles.webm": "/TriibeTask/static/media/profiles.e2a5fb9911c4882684d1.webm",
+    "static/media/wellness_challenges.webm": "/TriibeTask/static/media/wellness_challenges.1b33f53f56c3d06d8828.webm",
+    "static/media/newsfeed.webm": "/TriibeTask/static/media/newsfeed.f68294642b720d7f41ca.webm",
+    "static/media/analytics_dashboard.webm": "/TriibeTask/static/media/analytics_dashboard.3b03af8f892daf6ae0ad.webm",
+    "static/media/Wh.png": "/TriibeTask/static/media/Wh.7df6d050898fb37b103b.png",
+    "static/media/feed-3.png": "/TriibeTask/static/media/feed-3.ebd02c793c53bceedc01.png",
+    "static/media/feed-1.png": "/TriibeTask/static/media/feed-1.6f9b51f305cab22433c1.png",
+    "static/media/wellness_tracking.webm": "/TriibeTask/static/media/wellness_tracking.b15855bcd74ff13faa9c.webm",
+    "static/media/feedback.webm": "/TriibeTask/static/media/feedback.59549967b92ca54f19fa.webm",
+    "static/media/realtime_analytics.webm": "/TriibeTask/static/media/realtime_analytics.36f0b920886613019bb4.webm",
+    "static/media/ai_2.svg": "/TriibeTask/static/media/ai_2.d2330fdad710eba3d6dad02073055637.svg",
+    "static/media/needle.svg": "/TriibeTask/static/media/needle.9e2f8b07da36d3a4497a688f508f7faf.svg",
+    "static/media/ai_1.svg": "/TriibeTask/static/media/ai_1.c1e05dfe6e6ecffaf7c665511435fb0f.svg",
+    "static/media/apple-store.svg": "/TriibeTask/static/media/apple-store.7527460855ce07b6b1360bd060be75c6.svg",
+    "static/media/bottom-banner.svg": "/TriibeTask/static/media/bottom-banner.fb96e8fd40df19b4fbbe.svg",
+    "static/media/logo-new.svg": "/TriibeTask/static/media/logo-new.f53863588c17da1444c96448756387eb.svg",
+    "static/media/google-play.svg": "/TriibeTask/static/media/google-play.04bc00649c26fba7e27d7b413cf60380.svg",
+    "static/media/check-circle-1.svg": "/TriibeTask/static/media/check-circle-1.b88f80f27add0628a165.svg",
+    "index.html": "/TriibeTask/index.html",
+    "main.b9256c6f.css.map": "/TriibeTask/static/css/main.b9256c6f.css.map",
+    "main.20d8e60b.js.map": "/TriibeTask/static/js/main.20d8e60b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b9256c6f.css",
+    "static/js/main.20d8e60b.js"
+  ]
+}
