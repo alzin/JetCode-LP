@@ -66,9 +66,7 @@
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   }
   
-  .hvr-buzz:hover,
-  .hvr-buzz:focus,
-  .hvr-buzz:active {
+  .hvr-buzz:hover {
     -webkit-animation-name: hvr-buzz;
     animation-name: hvr-buzz;
     -webkit-animation-duration: 0.2s;

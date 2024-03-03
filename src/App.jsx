@@ -6,6 +6,7 @@ import './App.css'
 
 //loader  
 import Loader from './component/Loader/Loader'
+
 // sections
 import Container from './section/Container/Container'
 import Footer from './section/Footer/Footer'
@@ -15,10 +16,12 @@ import Header from './section/Header/Header'
 import Home from './pages/Home/Home'
 import Faqs from './pages/Faqs/Faqs'
 import Pricing from './pages/Pricing/Pricing'
-import EmployeeEngagement from './pages/EmployeeEngagement/EmployeeEngagement'
-import Wellness from './pages/Wellness/Wellness'
-import Analytics from './pages/Analytics/Analytics'
-import WhitepaperRequest from './pages/WhitepaperRequest/WhitepaperRequest'
+import ContactUs from './pages/ContactUs/ContactUs'
+
+// import EmployeeEngagement from './pages/EmployeeEngagement/EmployeeEngagement'
+// import Wellness from './pages/Wellness/Wellness'
+// import Analytics from './pages/Analytics/Analytics'
+// import WhitepaperRequest from './pages/WhitepaperRequest/WhitepaperRequest'
 
 
 const App = () => {
@@ -43,10 +46,12 @@ const App = () => {
               <Route path='/' element={<Home />} />
               <Route path='/faqs' element={<Faqs />} />
               <Route path='/pricing' element={<Pricing />} />
-              <Route path='/employee-engagement' element={<EmployeeEngagement />} />
+              <Route path='/contact' element={<ContactUs />} />
+
+              {/* <Route path='/employee-engagement' element={<EmployeeEngagement />} />
               <Route path='/wellness' element={<Wellness />} />
               <Route path='/analytics' element={<Analytics />} />
-              <Route path='/whitepaper-request' element={<WhitepaperRequest />} />
+              <Route path='/whitepaper-request' element={<WhitepaperRequest />} /> */}
             </Routes>
           </Container>
           <Footer />

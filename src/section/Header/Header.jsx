@@ -5,24 +5,25 @@ import { Link, useLocation } from 'react-router-dom'
 import './Header.css'
 
 //assets file
-import logo from '../../assets/images/logo-new.svg'
-import { IoAnalytics } from "react-icons/io5"
+
+// import logo from '../../assets/images/logo-new.svg'
+// import { IoAnalytics } from "react-icons/io5"
 
 //components
 import Burger from '../../component/Burger/Burger'
 import Buttons from '../../component/Buttons/Buttons'
-import { SolutionDropDown } from '../../component/DropDown/DropDown'
+// import {SolutionDropDown } from '../../component/DropDown/DropDown'
 
 const Header = () => {
 
   const [showMenu, setShowMenu] = useState(false)
-  const [showDropDown, setShowDropDown] = useState(false)
+  // const [showDropDown, setShowDropDown] = useState(false)
 
   const location = useLocation()
 
   useEffect(() => {
     setShowMenu(false)
-    setShowDropDown(false)
+    // setShowDropDown(false)
     window.scrollTo(0, 0)
   }, [location])
 
@@ -35,9 +36,9 @@ const Header = () => {
 
 
   //show solution drop down
-  const handleDropDown = () => {
-    setShowDropDown(pre => !pre);
-  }
+  // const handleDropDown = () => {
+  //   setShowDropDown(pre => !pre);
+  // }
 
 
   return (
@@ -53,14 +54,15 @@ const Header = () => {
 
         <nav className={showMenu ? "active" : ""}>
           <ul>
-            <li className='list' onClick={handleDropDown}>
+            {/* <li className='list' onClick={handleDropDown}>
               Solutions
               <ul className={showDropDown ? "active" : ""}>
                 <SolutionDropDown to='/employee-engagement' icon={<IoAnalytics />} name="Employee Engagement" />
                 <SolutionDropDown to='/wellness' icon={<IoAnalytics />} name="Wellness" />
                 <SolutionDropDown to='/analytics' icon={<IoAnalytics />} name="Analytics" />
               </ul>
-            </li>
+            </li> */}
+            <li className='hvr-underline-from-left'><Link to='/contact'>Contact Us</Link></li>
             <li className='hvr-underline-from-left'><Link to='/pricing'>Pricing</Link></li>
             <li className='hvr-underline-from-left'><Link to='/faqs'>FAQS</Link></li>
           </ul>
