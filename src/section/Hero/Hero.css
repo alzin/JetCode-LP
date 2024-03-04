@@ -26,7 +26,7 @@
 .hero .hero-l h1 {
     width: 85%;
     position: relative;
-    color: var(--white-color);
+    color: var(--dark-color);
     font-size: calc(var(--main-font-size) * 2.3);
     font-style: normal;
     font-weight: 600;
@@ -102,9 +102,10 @@
 
 
 .hero .hero-l p {
-    font-size: var(--main-font-size);
-    margin-top: 15px;
-    color: #9592ee;
+    font-size: 15px;
+    margin-top: 10px;
+    color: var(--dark-color);
+    opacity: .7;
     font-weight: 400;
     line-height: 130%;
 }
@@ -131,13 +132,14 @@
     max-width: 100%;
     border-radius: 10px;
     z-index: 9999;
+    visibility: hidden;
 }
 
 .blur {
     top: 50px;
     right: -100px;
     opacity: .7;
-    background-color: #eb56e8;
+    background: var(--primary-gradient);
 }
 
 /************************* 

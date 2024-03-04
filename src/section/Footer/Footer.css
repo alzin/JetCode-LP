@@ -20,6 +20,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 10px;
+    visibility: hidden;
 }
 
 @media (max-width: 991px) {

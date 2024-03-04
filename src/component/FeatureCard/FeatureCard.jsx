@@ -4,9 +4,9 @@ import { useEffect, useRef, useState } from 'react'
 import './FeatureCard.css'
 
 // components
-import FeatureMobileNav from '../../component/FeatureMobileNav/FeatureMobileNav'
+// import FeatureMobileNav from '../../component/FeatureMobileNav/FeatureMobileNav'
 import FeatureNavContent from '../../component/FeatureNavContent/FeatureNavContent'
-import FeatureNavIndicator from '../../component/FeatureNavIndicator/FeatureNavIndicator'
+// import FeatureNavIndicator from '../../component/FeatureNavIndicator/FeatureNavIndicator'
 
 
 const FeatureCard = (props) => {
@@ -40,7 +40,7 @@ const FeatureCard = (props) => {
 
     const handleScroll = () => {
         const cardHeight = card.current.offsetHeight
-        const cardOffsetTop = card.current.offsetTop + cardHeight -80
+        const cardOffsetTop = card.current.offsetTop + cardHeight - 80
         const scrollY = window.scrollY
 
         if (props.id < 2) {
@@ -54,6 +54,7 @@ const FeatureCard = (props) => {
     }
 
     useEffect(() => {
+        setActiveIndex(0)
         handelActive(activeIndex);
 
         // parallax scrolling only if width more than 992 px
@@ -80,13 +81,13 @@ const FeatureCard = (props) => {
                     </div>
 
                     <div className="feed-content">
-                        <FeatureNavIndicator data={featureNavbar} indicatorWidth={props.data.indicatorWidth} handelActive={handelActive} activeIndex={activeIndex} />
+                        {/* <FeatureNavIndicator data={featureNavbar} indicatorWidth={props.data.indicatorWidth} handelActive={handelActive} activeIndex={activeIndex} /> */}
                         <div className="tab-content">
                             {featureNavbar.map((item, index) =>
                                 <FeatureNavContent key={index} data={item} />
                             )}
                         </div>
-                        <FeatureMobileNav data={featureNavbar} activeIndex={activeIndex} setActiveIndex={activateIndex} />
+                        {/* <FeatureMobileNav data={featureNavbar} activeIndex={activeIndex} setActiveIndex={activateIndex} /> */}
                     </div>
                 </div>
             </div>

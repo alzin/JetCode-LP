@@ -100,7 +100,8 @@
  .tab-content .tab-pane .tab-body .tab-body-right video {
      max-height: 350px;
      max-width: 100%;
-     width: 100%
+     width: 100%;
+     visibility: hidden;
  }
 
 

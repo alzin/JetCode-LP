@@ -9,7 +9,7 @@ import FeatureTriibeData from '../../data/FeatureTriibeData'
 
 const FeatureTriibe = () => {
     return (
-        <section className="feature-triibe">
+        <section className="feature-triibe" name="features">
             {FeatureTriibeData.map((item, index) =>
                 <FeatureCard key={index} id={item.id} data={item} />
             )}

@@ -17,17 +17,20 @@ const HowAppWork = () => {
         const videoOffsetTop = video.current.offsetTop
 
         const handleScroll = () => {
-            const scrollY = window.scrollY
+            if (window.innerWidth >= 992) {
+                const scrollY = window.scrollY
 
-            // console.log(scrollY, " ", videoOffsetTop, " ", videoHeight)
+                // console.log(scrollY, " ", videoOffsetTop, " ", videoHeight)
 
-            // if scrollY between (videoOffsetTop) and  (videoOffsetTop + videoHeight) active parallax in video  
-            if (scrollY >= videoOffsetTop && scrollY <= videoOffsetTop + videoHeight) {
-                // console.log(1);
-                // (scrollY - videoOffsetTop) / videoHeight)  between 0 and 1
-                setRotateX(30 - (30 * (scrollY - videoOffsetTop) / videoHeight))
+                // if scrollY between (videoOffsetTop) and  (videoOffsetTop + videoHeight) active parallax in video  
+                if (scrollY >= videoOffsetTop && scrollY <= videoOffsetTop + videoHeight) {
+                    // console.log(1);
+                    // (scrollY - videoOffsetTop) / videoHeight)  between 0 and 1
+                    setRotateX(30 - (30 * (scrollY - videoOffsetTop) / videoHeight))
+                }
+
             }
-
+            else setRotateX(0)
         }
 
         window.addEventListener("scroll", handleScroll)

@@ -13,10 +13,10 @@ const FeatureNavContent = (props) => {
                         <div className="tab-body-left">
                             <h3>{props.data.title}</h3>
                             <p>{props.data.content}</p>
-                            <Buttons content='Book a demo' to='/' className="BookADemo" />
+                            {/* <Buttons content='Book a demo' to='/' className="BookADemo" /> */}
                         </div>
                         <div className="tab-body-right">
-                            <video autoPlay=" " muted="" loop="" playsInline="">
+                            <video autoPlay="" muted="" loop="" playsInline="">
                                 <source src={props.data.video} />
                                 Your browser does not support the video tag.
                             </video>

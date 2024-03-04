@@ -14,10 +14,10 @@ import Header from './section/Header/Header'
 
 // pages
 import Home from './pages/Home/Home'
-import Faqs from './pages/Faqs/Faqs'
-import Pricing from './pages/Pricing/Pricing'
 import ContactUs from './pages/ContactUs/ContactUs'
 
+// import Faqs from './pages/Faqs/Faqs'
+// import Pricing from './pages/Pricing/Pricing'
 // import EmployeeEngagement from './pages/EmployeeEngagement/EmployeeEngagement'
 // import Wellness from './pages/Wellness/Wellness'
 // import Analytics from './pages/Analytics/Analytics'
@@ -44,11 +44,11 @@ const App = () => {
           <Container>
             <Routes>
               <Route path='/' element={<Home />} />
-              <Route path='/faqs' element={<Faqs />} />
-              <Route path='/pricing' element={<Pricing />} />
               <Route path='/contact' element={<ContactUs />} />
 
-              {/* <Route path='/employee-engagement' element={<EmployeeEngagement />} />
+              {/* <Route path='/faqs' element={<Faqs />} />
+              <Route path='/pricing' element={<Pricing />} />
+              <Route path='/employee-engagement' element={<EmployeeEngagement />} />
               <Route path='/wellness' element={<Wellness />} />
               <Route path='/analytics' element={<Analytics />} />
               <Route path='/whitepaper-request' element={<WhitepaperRequest />} /> */}

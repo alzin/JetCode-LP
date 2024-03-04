@@ -8,14 +8,14 @@ import HeroImg from '../../assets/images/Ai-2.png'
 
 //component
 import Buttons from '../../component/Buttons/Buttons'
-import Particle from '../../component/Particles/Particle'
+// import Particle from '../../component/Particles/Particle'
 
 
 
 const Hero = () => {
     return (
         <div className="hero container">
-            <Particle />
+            {/* <Particle /> */}
             <div className="blur"></div>
             <div className="hero-l">
                 {/* <div className="top-post">
@@ -28,27 +28,19 @@ const Hero = () => {
                 </div> */}
 
                 <h1>
-                    Revolutionize Programming with Slash code IA :
-                    <div className="slideWord">
+                    Accelerate Your Development with JetCode: The Future of Efficient Programming                    {/* <div className="slideWord">
                         <span> Innovative </span>
                         <span>Comprehensive</span>
                         <span>User-friendly</span>
-                    </div>
+                    </div> */}
                 </h1>
                 <p>
-                    Slash Code is a cutting-edge website that harnesses the power
-                    of GPT technology to provide a unique chat experience
-                    with AI.Tailored specifically for programmers,
-                    Slash Code offers a comprehensive platform that delivers
-                    results akin to detailed documentation on any
-                    programming-related topic you're searching for.With its user-friendly interface and advanced AI capabilities,
-                    Slash Code is your go-to destination for expert guidance and information in the programming world.
+                    In the fast-paced world of technology, every second counts. Especially for engineering managers and programmers juggling multiple projects and tight deadlines. That's why we created JetCode, the tool that turns your system requirements into ready-to-use code with the click of a button.
                 </p>
                 <div className="hero-button">
-                    <Buttons content='Try for free' to='/' className="TryFreeButton" />
-                    <Buttons content='Book a demo' to='/' className="BookADemo" />
+                    <Buttons content='Try for free' to='https://dahab-production.up.railway.app/' className="TryFreeButton" />
                 </div>
-                {/* <p>*No credit card required</p> */}
+                <p>*No credit card required</p>
             </div>
 
             <div className="hero-r">

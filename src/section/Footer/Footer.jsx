@@ -4,15 +4,15 @@ import { Link } from 'react-router-dom'
 import './Footer.css'
 
 // component
-import GetStarted from '../../section/GetStarted/GetStarted'
+// import GetStarted from '../../section/GetStarted/GetStarted'
 
 const Footer = () => {
   return (
     <>
-      <GetStarted />
+      {/* <GetStarted /> */}
       <div className="footer">
         <div className="copy-write">
-          <p>© 2023 Keyvalue Software Systems. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} JetCode. All rights reserved.</p>
         </div>
 
         <div className="terms">

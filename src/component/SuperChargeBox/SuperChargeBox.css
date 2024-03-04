@@ -2,6 +2,7 @@
     padding: 30px 44px;
     text-align: center;
     min-width: 250px;
+    flex: 1 1;
 }
 
 .super-charge-employee .box-container .box-2 h3 {
@@ -28,7 +29,8 @@
 }
 
 .super-charge-employee .box-container .box-2 img {
-    max-width: 100%
+    max-width: 100%;
+    visibility: hidden;
 }
 
 @media screen and (max-width:1400px) {

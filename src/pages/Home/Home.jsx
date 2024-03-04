@@ -17,8 +17,8 @@ const Home = () => {
       <FeatureTriibe />
       <SuperchargeEmployee />
       <HowAppWork />
-      <FreqQuestion />
-      <WhitePaper />
+      {/* <FreqQuestion /> */}
+      {/* <WhitePaper /> */}
     </>
   )
 }

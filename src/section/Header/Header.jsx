@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-
+import { Link as SLink } from 'react-scroll'
 //css files
 import './Header.css'
 
@@ -46,8 +46,8 @@ const Header = () => {
       <div className="container">
         <div className="logo">
           {/* <img src={logo} alt="logo" /> */}
-          {/* <span>Slash AI</span> */}
-          <svg height="100" stroke="#212529" strokeWidth="1" className="text-line"><text dominantBaseline="middle" textAnchor="right" y="50%">Slash AI</text></svg>
+          <Link to="/" ><span>JetCode</span></Link>
+          {/* <svg height="100" stroke="#212529" strokeWidth="1" className="text-line"><text dominantBaseline="middle" textAnchor="right" y="50%">Slash AI</text></svg> */}
         </div>
 
         <Burger showMenu={showMenu} handleMenu={handleMenu} />
@@ -62,11 +62,11 @@ const Header = () => {
                 <SolutionDropDown to='/analytics' icon={<IoAnalytics />} name="Analytics" />
               </ul>
             </li> */}
+            <li className='hvr-underline-from-left'><SLink to='features' smooth={true}>Features</SLink></li>
+            <li className='hvr-underline-from-left'><Link to='https://dahab-production.up.railway.app/'>Demo</Link></li>
             <li className='hvr-underline-from-left'><Link to='/contact'>Contact Us</Link></li>
-            <li className='hvr-underline-from-left'><Link to='/pricing'>Pricing</Link></li>
-            <li className='hvr-underline-from-left'><Link to='/faqs'>FAQS</Link></li>
           </ul>
-          <Buttons content='Try for free' to='/' className="TryFreeButton" />
+          <Buttons content='Try for free' to='https://dahab-production.up.railway.app/' className="TryFreeButton" />
         </nav>
 
       </div>

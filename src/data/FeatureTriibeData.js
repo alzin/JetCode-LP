@@ -23,15 +23,15 @@ const FeatureTriibeData = [
     {
         "id": 0,
         "indicatorWidth": 200,
-        "FeatureTitle": "Elevating Employee Engagement",
-        "FeatureContent": "In today's hybrid work , communication and engagement are more vital than ever. Triibe provides a platform where every voice is heard, every achievement recognized, and every connection is meaningful. ",
+        "FeatureTitle": "Instantly Transform Your Ideas into Code with Our AI-Powered Tool",
+        "FeatureContent": "Gone are the days of sifting through countless forums and documentation to find coding solutions. Input your system requirements, whether for web, mobile, or any platform, and our AI will deliver step-by-step code implementation tailored to your needs. ",
         "FeatureImg": Feed1,
         "FeatureNavbar": [
             {
                 "icon": <IoAnalytics className='icon' />,
                 "navItem": "News Feed",
-                "title": "Dynamic News Feed for meaningful connections",
-                "content": "Real-time updates, right when you need them. Engage, interact, and stay in the loop with every heartbeat of your organization.",
+                "title": "",
+                "content": "Imagine being able to materialize your project ideas into executable code within minutes. Our AI analyzes your requirements and crafts precise, efficient, and ready-to-use code snippets. It's like having an expert developer at your fingertips, ready to tackle any challenge you throw at it.",
                 "video": Newsfeed,
                 "isActive": true,
                 "id": 0
@@ -70,15 +70,15 @@ const FeatureTriibeData = [
     {
         "id": 1,
         "indicatorWidth": 300,
-        "FeatureTitle": "Nurturing Employee Wellness",
-        "FeatureContent": "Cultivating a workplace that prioritizes the health and happiness of its members, Triibe is dedicated to providing tools that support personal growth and a vibrant office culture.  ",
+        "FeatureTitle": "Accelerate Your Project Timeline from Months to Days",
+        "FeatureContent": "Speed up your development process dramatically. With our tool, you eliminate the bottleneck of research and troubleshooting, allowing you to focus on creativity and innovation.",
         "FeatureImg": Wh,
         "FeatureNavbar": [
             {
                 "icon": <IoAnalytics className='icon' />,
                 "navItem": "Wellness Challenges",
-                "title": "Wellness tracking for tailored well-being",
-                "content": "Engage in friendly contests that boost health and team unity. Achieve together, earn accolades, and share in the triumphs. ",
+                "title": "",
+                "content": "Projects that used to take months of back-and-forth, debugging, and consulting various resources can now be streamlined into a matter of days. Our AI's intuitive understanding of your needs translates into faster development cycles and quicker market entry. ",
                 "video": WellnessChallenges,
                 "isActive": true,
                 "id": 0
@@ -97,15 +97,15 @@ const FeatureTriibeData = [
     }, {
         "id": 2,
         "indicatorWidth": 300,
-        "FeatureTitle": "Fostering Data-Driven Leadership",
-        "FeatureContent": "Enhance your leadership with Triibe's comprehensive analytics for informed, data-driven decisions and effective strategic planning. ",
+        "FeatureTitle": "Empower Your Team with AI-Driven Efficiency",
+        "FeatureContent": "Enable your team to do more with less. Our tool is designed to augment the capabilities of your developers, allowing them to produce more while reducing the risk of burnout.",
         "FeatureImg": Feed3,
         "FeatureNavbar": [
             {
                 "icon": <IoAnalytics className='icon' />,
                 "navItem": "Analytics Dashboard",
-                "title": "Analytics Dashboard for strategic oversight",
-                "content": "Navigate your strategy with a dashboard that brings data to life, showing engagement and wellness trends for strategic planning ",
+                "title": "",
+                "content": " By automating the tedious part of programming, your team can focus on strategic tasks. This not only boosts productivity but also morale, as developers can see their work come to life faster and spend more time on creative aspects of project development.",
                 "video": AnalyticsDashboard,
                 "isActive": true,
                 "id": 0

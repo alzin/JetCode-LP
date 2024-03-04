@@ -11,16 +11,15 @@ import SuperChargeBox from '../../component/SuperChargeBox/SuperChargeBox'
 const SuperchargeEmployee = () => {
     return (
         <section className="super-charge-employee">
-            <h2>Supercharge employee engagement with AI</h2>
+            <h2>Supercharge your development with AI</h2>
             <h5>
-                Our platform skillfully blends AI with employee engagement, ensuring a
-                smarter, responsive, and secure workplace experience that enriches
-                interaction and culture
+
+                Input your project requirements and let our AI work its magic, generating clean, efficient, and ready-to-use code
             </h5>
             <div className="box-container">
-                <SuperChargeBox SrcImg={Ai_1} AltImage="Ai_1" BoxTitle="AI Chatbot" BoxContent="Swiftly resolves HR queries with accurate, 24/7 AI support, ensuring reliable information anytime " />
-                <SuperChargeBox SrcImg={Needle} AltImage="Needle" BoxTitle="AI in Analytics" BoxContent="Provides real-time sentiment analysis in pulse surveys for deeper insight and informed decisions. " />
-                <SuperChargeBox SrcImg={Ai_2} AltImage="Ai_2" BoxTitle="Smart Celebrations" BoxContent="Effortlessly recognizes employee milestones, enhancing workplace community and culture. " />
+                <SuperChargeBox SrcImg={Ai_1} AltImage="Ai_1" BoxTitle="Step-by-Step Implementation Guides" BoxContent="Get more than just code. Our platform provides detailed implementation guides to ensure seamless integration and deployment." />
+                <SuperChargeBox SrcImg={Needle} AltImage="Needle" BoxTitle="Cross-Platform Support" BoxContent="Whether you're developing a cutting-edge web application, a mobile app, or software for any platform, JetCode has you covered." />
+                <SuperChargeBox SrcImg={Ai_2} AltImage="Ai_2" BoxTitle="Save Time and Resources" BoxContent="Eliminate the need to sift through countless resources or debug patchwork code. JetCode streamlines your development process, freeing up your time to focus on innovation and refinement." />
             </div>
         </section>
     )

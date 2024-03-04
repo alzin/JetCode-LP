@@ -5,7 +5,7 @@ import './Buttons.css'
 
 const Buttons = (props) => {
     return (
-        <Link to={props.to} className={`hvr-buzz ${props.className}`}>
+        <Link to={props.to} className={props.className}>
             {props.content}
         </Link>
     )

@@ -1,7 +1,7 @@
 header {
     width: 100vw;
     height: 100px;
-    box-shadow: 0 0 10px var(--white-color);
+    box-shadow: 0 0 10px var(--dark-color);
     background-color: var(--white-color);
     /* background-color: var(--dark-color); */
     opacity: .9;
@@ -21,6 +21,18 @@ header .container {
 header .container .logo {
     /* min-width: 60%; */
     width: 70%;
+    font-size: 34px;
+    font-weight: 600;
+    /* color: var(--main-color-2); */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header .container .logo span {
+    background-image: var(--primary-gradient);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 header .container .burger {
@@ -44,8 +56,8 @@ header .container nav ul {
 }
 
 header .container nav ul li {
-    padding: 0 25px;
-    margin: 5px;
+    padding: 0 18px;
+    margin: 6px;
     font-size: var(--main-font-size);
     font-weight: 500;
     line-height: 1.5;
@@ -56,7 +68,6 @@ header .container nav ul li {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 header .container nav ul .list {
