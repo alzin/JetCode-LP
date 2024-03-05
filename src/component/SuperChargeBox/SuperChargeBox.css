@@ -1,8 +1,9 @@
 .super-charge-employee .box-container .box-2 {
     padding: 30px 44px;
     text-align: center;
-    min-width: 250px;
+    /* max-width: 300px; */
     flex: 1 1;
+    /* background-color: red; */
 }
 
 .super-charge-employee .box-container .box-2 h3 {
@@ -21,7 +22,8 @@
     font-weight: 400;
     line-height: normal;
     margin: 12px 0 0;
-    padding: 0
+    padding: 0;
+    text-align: justify;
 }
 
 .super-charge-employee .img-box {
@@ -52,9 +54,16 @@
     }
 }
 
+@media screen and (max-width:1200px) {
+    .box-2 {
+        min-width: 400px;
+    }
+
+}
+
 @media screen and (max-width:992px) {
     .box-2 {
-        flex: 1;
+        flex: 1 1;
     }
 
 

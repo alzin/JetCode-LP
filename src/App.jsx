@@ -30,9 +30,10 @@ const App = () => {
 
   useEffect(() => {
 
-    setTimeout(()=>{
+    setTimeout(() => {
       setIsLoading(true);
-    },2000)
+    }, 2000)
+    // console.log("contact")
 
   }, [isLoading])
 

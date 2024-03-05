@@ -1,25 +1,27 @@
 .feed-card {
     max-width: 1311px;
-    height: 784px;
     transition: all 1s;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .feed-card:nth-child(1) {
     position: sticky;
-    top: 4%;
+    /* top: 50px; */
+    top: calc((100vh - 100px)*0.07);
 }
 
 .feed-card:nth-child(2) {
     position: sticky;
-    top: 5%;
+    top: calc((100vh - 100px)*0.07);
 }
 
 .feed-card:nth-child(3) {
     /* position: sticky; */
     /* top: 40px; */
+    scale: .85;
 }
 
 .feed-section {
@@ -33,8 +35,9 @@
 }
 
 .feed-section .container {
-    max-height: 150vh;
-    min-height: 100vh;
+    /* max-height: 150vh; */
+    min-height: 700px;
+    height: calc((100vh - (100px + 100vh * 0.07)) / 0.78);
     background: linear-gradient(180deg, #2b1e41, rgba(43, 30, 65, 0)), #110d18;
     border-radius: 30px;
     box-shadow: 0 -4px 38px 0 rgba(0, 0, 0, .25);
@@ -56,7 +59,7 @@
     margin: 0;
     max-width: 840px;
     padding: 0;
-    text-align: start;
+    text-align: justify;
 
 }
 
@@ -73,7 +76,9 @@
     line-height: 160%;
     margin: 24px 0 0;
     max-width: 798px;
-    padding: 0
+    padding: 0;
+    text-align: justify;
+
 }
 
 .feed-section .container .feed-head .img-section {
@@ -90,7 +95,9 @@
 }
 
 .feed-section .container .feed-content {
-    margin-top: 30px
+    margin-top: 30px;
+    text-align: justify;
+
 }
 
 
@@ -119,11 +126,11 @@
 
     .feed-section .container .feed-head .head-section p {
         font-size: 22px;
-        margin-top: 18px
+        margin-top: 50px
     }
 
     .feed-section .container .feed-content {
-        margin-top: 24px
+        margin-top: 25px
     }
 
     .feed-section.minify {
@@ -142,25 +149,30 @@
 }
 
 @media screen and (max-width:992px) {
+   
     .feed-section {
         padding: 0;
-        transform: scale(1)
+        transform: scale(1);
     }
 
     .feed-card:nth-child(1),
     .feed-card:nth-child(2),
     .feed-card:nth-child(3) {
         position: relative;
+        top: initial;
     }
 
     .feed-section .container {
-        min-height: fit-content;
+        /* min-height: fit-content; */
         background: linear-gradient(180deg, #2b1e41, #2b1e41), #110d18;
         border-radius: 0;
         box-shadow: 0 -1.22506px 11.63811px 0 rgba(0, 0, 0, .25);
         margin-bottom: 80px;
         padding: 44px 20px;
-        width: 100vw;
+        width: 100%;
+        min-height: 800px;
+
+        /* background: red; */
 
     }
 
@@ -170,18 +182,23 @@
     }
 
     .feed-section .container .feed-head .head-section h2 {
-        font-size: 32px;
+        font-size: 32px !important;
         line-height: 32px;
-        text-align: center
+        /* text-align: center */
     }
 
     .feed-section .container .feed-head .head-section p,
     .feed-section .container .feed-head .img-section {
-        display: none
+        /* display: none */
+        font-size: 20px;
     }
 
+    .feed-section .container .feed-head .img-section{
+        display: none;
+    }
     .feed-section .container .feed-content {
-        margin-top: 36px
+        margin-top: 36px;
+        /* background: red; */
     }
 
 }

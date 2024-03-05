@@ -28,7 +28,8 @@ const Hero = () => {
                 </div> */}
 
                 <h1>
-                    Accelerate Your Development with JetCode: The Future of Efficient Programming                    {/* <div className="slideWord">
+                    Accelerate Your Development with JetCode: <span className="gradiant-text">The Future of Efficient Programming</span>
+                    {/* <div className="slideWord">
                         <span> Innovative </span>
                         <span>Comprehensive</span>
                         <span>User-friendly</span>

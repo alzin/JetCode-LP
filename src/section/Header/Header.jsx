@@ -31,7 +31,7 @@ const Header = () => {
 
   //show menu item
   const handleMenu = () => {
-    setShowMenu(pre => !pre);
+    if (window.innerWidth < 992) setShowMenu(pre => !pre);
   }
 
 
@@ -62,9 +62,19 @@ const Header = () => {
                 <SolutionDropDown to='/analytics' icon={<IoAnalytics />} name="Analytics" />
               </ul>
             </li> */}
-            <li className='hvr-underline-from-left'><SLink to='features' smooth={true}>Features</SLink></li>
-            <li className='hvr-underline-from-left'><Link to='https://dahab-production.up.railway.app/'>Demo</Link></li>
-            <li className='hvr-underline-from-left'><Link to='/contact'>Contact Us</Link></li>
+            <li className='hvr-underline-from-left' onClick={handleMenu}>
+              {location.pathname === "/" ?
+                <SLink to='features'>Features</SLink> :
+                <Link to='/'>Features</Link>
+              }
+            </li>
+            <li className='hvr-underline-from-left' onClick={handleMenu}>
+              {location.pathname === "/" ?
+                <SLink to='demo'>Demo</SLink> :
+                <Link to='/'>Demo</Link>
+              }
+            </li>
+            <li className='hvr-underline-from-left' onClick={handleMenu}><Link to='/contact'>Contact Us</Link></li>
           </ul>
           <Buttons content='Try for free' to='https://dahab-production.up.railway.app/' className="TryFreeButton" />
         </nav>

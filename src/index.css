@@ -68,7 +68,7 @@ button {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  filter: blur(200px);
+  filter: blur(100px);
   z-index: -9;
   overflow-x: hidden;
 }

@@ -1,9 +1,33 @@
 import './ContactUs.css'
 import ContactImg from '../../assets/images/ai_1.svg'
-import { useState } from 'react'
-import { useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
+import emailjs from "@emailjs/browser";
 
 const ContactUs = () => {
+
+    const form = useRef();
+    const sendEmail = (e) => {
+        e.preventDefault();
+        emailjs
+            .sendForm(
+                "service_0orlrkc",
+                "template_fabncd4",
+                form.current,
+                "mqYufy-Epq6lV-Wdk",
+            )
+            .then(
+                (result) => {
+                    console.log(result.text);
+                    alert("Email sent successfully!");
+                },
+                (error) => {
+                    console.log(error.text);
+                    alert("An error occurred while sending the email.");
+                },
+            );
+        e.target.reset();
+    };
+
     const [info, setInfo] = useState({
         name: "",
         companyName: "",
@@ -17,7 +41,7 @@ const ContactUs = () => {
     }
 
     useEffect(() => {
-        console.log(info);
+        console.log(info)
     }, [info])
 
 
@@ -29,7 +53,7 @@ const ContactUs = () => {
                 </div>
 
                 <div className='contact-r'>
-                    <form>
+                    <form ref={form} onSubmit={sendEmail}>
                         <h2>Contact Us</h2>
 
                         <div className="inputBox">
