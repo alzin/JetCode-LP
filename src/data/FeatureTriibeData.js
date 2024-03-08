@@ -17,6 +17,11 @@ import WellnessChallenges from "../assets/videos/wellness_challenges.webm"
 import WellnessTracking from "../assets/videos/wellness_tracking.webm"
 
 // icons
+
+
+
+
+
 import { IoAnalytics } from "react-icons/io5"
 
 const FeatureTriibeData = [

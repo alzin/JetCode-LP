@@ -4,8 +4,8 @@ import { useEffect, useRef, useState } from 'react'
 import './HowAppWork.css'
 
 // assets
-import Tribe_product_video from '../../assets/videos/Tribe_product Hunt_2024-vp9-chrome.mp4'
-import YouTubeVideo from '../../component/YouTubeVideo/YouTubeVideo'
+import JetCodeVideo from '../../assets/videos/saas_demo.mp4'
+// import YouTubeVideo from '../../component/YouTubeVideo/YouTubeVideo'
 
 
 const HowAppWork = () => {
@@ -51,12 +51,11 @@ const HowAppWork = () => {
             <div className="container" ref={video}>
                 <h2 >Explore how app works</h2>
                 <div className="video-container" style={{ "transform": `perspective(1000px) rotateX(${rotateX}deg)` }}>
-                    {/* <video controls="" muted style={{ "transform": `perspective(1000px) rotateX(${rotateX}deg)` }}>
-                        <source src={Tribe_product_video} type="video/mp4" />
+                    <video controls="on" muted autoPlay >
+                        <source src={JetCodeVideo} type="video/mp4" />
                         Your browser does not support the video tag.
-                    </video> */}
-                    <YouTubeVideo videoId="G1-ZuhjnvsM"/>
-                    {/* <iframe  src="https://www.youtube.com/embed/G1-ZuhjnvsM" title="Jetcode" frameborder="5" ></iframe> */}
+                    </video>
+                    {/* <YouTubeVideo videoId="G1-ZuhjnvsM"/> */}
                 </div>
             </div>
         </section>

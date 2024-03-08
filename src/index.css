@@ -57,10 +57,12 @@ button {
 
 
 .container {
-  padding-left: 25px;
-  padding-right: 25px;
+  /* background: red; */
+  padding-left: 75px;
+  padding-right: 75px;
   margin-left: auto;
   margin-right: auto;
+  overflow-x: hidden;
 }
 
 .blur {
@@ -88,3 +90,12 @@ button {
     width: 1200px;
   }
 }
+
+@media (min-width: 1400px) {
+  .container {
+    width: 1400px;
+  }
+}
+
+
+

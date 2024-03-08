@@ -6,7 +6,7 @@ import './Header.css'
 
 //assets file
 
-// import logo from '../../assets/images/logo-new.svg'
+import logo from '../../assets/images/logo192.png'
 // import { IoAnalytics } from "react-icons/io5"
 
 //components
@@ -31,7 +31,8 @@ const Header = () => {
 
   //show menu item
   const handleMenu = () => {
-    if (window.innerWidth < 992) setShowMenu(pre => !pre);
+    if (window.innerWidth < 1000)
+      setShowMenu(pre => !pre);
   }
 
 
@@ -45,8 +46,10 @@ const Header = () => {
     <header>
       <div className="container">
         <div className="logo">
-          {/* <img src={logo} alt="logo" /> */}
-          <Link to="/" ><span>JetCode</span></Link>
+          <Link to="/" >
+            <img src={logo} alt="logo" />
+            <span>JetCode</span>
+          </Link>
           {/* <svg height="100" stroke="#212529" strokeWidth="1" className="text-line"><text dominantBaseline="middle" textAnchor="right" y="50%">Slash AI</text></svg> */}
         </div>
 
@@ -62,19 +65,19 @@ const Header = () => {
                 <SolutionDropDown to='/analytics' icon={<IoAnalytics />} name="Analytics" />
               </ul>
             </li> */}
-            <li className='hvr-underline-from-left' onClick={handleMenu}>
+            <li className='hvr-underline-from-left'>
               {location.pathname === "/" ?
-                <SLink to='features'>Features</SLink> :
-                <Link to='/'>Features</Link>
+                <SLink to='features' onClick={handleMenu}>Features</SLink> :
+                <Link to='/' onClick={handleMenu}>Features</Link>
               }
             </li>
-            <li className='hvr-underline-from-left' onClick={handleMenu}>
+            <li className='hvr-underline-from-left'>
               {location.pathname === "/" ?
-                <SLink to='demo'>Demo</SLink> :
-                <Link to='/'>Demo</Link>
+                <SLink to='demo' onClick={handleMenu}>Demo</SLink> :
+                <Link to='/' onClick={handleMenu}>Demo</Link>
               }
             </li>
-            <li className='hvr-underline-from-left' onClick={handleMenu}><Link to='/contact'>Contact Us</Link></li>
+            <li className='hvr-underline-from-left'><Link to='/contact' onClick={handleMenu}>Contact Us</Link></li>
           </ul>
           <Buttons content='Try for free' to='https://dahab-production.up.railway.app/' className="TryFreeButton" />
         </nav>

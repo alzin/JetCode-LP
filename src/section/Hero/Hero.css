@@ -144,6 +144,7 @@
     right: -100px;
     /* opacity: .7; */
     background: var(--primary-gradient);
+    overflow: hidden;
 }
 
 /************************* 
@@ -156,10 +157,12 @@
     .blur {
         display: none;
     }
-
+    .hero .hero-r{
+        display: none;
+    }
     .hero .hero-l {
         flex: 1 1;
-        width: 100%;
+        /* width: 100%; */
     }
 
     .hero .hero-l h1 {
@@ -176,8 +179,9 @@
     }
 
     .hero .hero-l .hero-button {
-        width: 100vw;
-        margin-left: -25px;
+        width: 100%;
+        /* margin-left: -25px; */
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -189,7 +193,7 @@
     .hero .hero-l .hero-button .BookADemo {
         margin-top: 0px;
         margin-left: 0px;
-        width: calc(100vw - 50px);
+        width: 100%;
     }
 
     .hero .hero-r img {

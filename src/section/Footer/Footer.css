@@ -1,7 +1,7 @@
 .footer {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background: #7875ea;
     min-height: 65px;
     padding: 24px 120px;
@@ -12,7 +12,7 @@
 }
 
 .copy-write {
-    flex: 2;
+    /* flex: 1; */
 }
 
 .terms {
@@ -20,10 +20,10 @@
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-    visibility: hidden;
+    display: none;
 }
 
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
     .footer {
         flex-direction: column;
         gap: 10px;
@@ -40,4 +40,4 @@
         width: 100vw;
         justify-content: space-around;
     }
-}
+} */

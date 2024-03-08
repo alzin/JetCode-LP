@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    /* overflow: hidden; */
 
 }
 
@@ -35,6 +36,7 @@
 }
 
 .feed-section .container {
+    overflow: hidden;
     /* max-height: 150vh; */
     min-height: 700px;
     height: calc((100vh - (100px + 100vh * 0.07)) / 0.78);
@@ -52,14 +54,14 @@
 .feed-section .container .feed-head .head-section h2 {
     color: #f5f5f5;
     font-family: Satoshi, sans-serif;
-    font-size: 43px !important;
+    font-size: 52px ;
     font-style: normal;
     font-weight: 600;
     line-height: 120% !important;
     margin: 0;
     max-width: 840px;
     padding: 0;
-    text-align: justify;
+    text-align: left;
 
 }
 
@@ -77,7 +79,7 @@
     margin: 24px 0 0;
     max-width: 798px;
     padding: 0;
-    text-align: justify;
+    text-align: left;
 
 }
 
@@ -96,7 +98,7 @@
 
 .feed-section .container .feed-content {
     margin-top: 30px;
-    text-align: justify;
+    text-align: left;
 
 }
 
@@ -141,10 +143,6 @@
 @media screen and (max-width:1350px) {
     .feed-section {
         padding: 0;
-    }
-
-    .feed-section.minify {
-        transform: scale(.72)
     }
 }
 

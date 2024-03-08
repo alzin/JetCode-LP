@@ -1,7 +1,7 @@
  .how-app-work {
-     min-height: 200vh;
+     min-height: 350vh;
      padding-top: 90px;
-     padding-bottom: 200px;
+     padding-bottom: 100px;
      position: static;
      background-color: var(--white-color);
 
@@ -19,7 +19,8 @@
      flex-direction: column;
 
      position: sticky;
-     top: 50px;
+     top: 75px;
+     overflow: hidden;
  }
 
  .how-app-work .container h2 {
@@ -31,6 +32,7 @@
      line-height: normal;
      margin: 0;
      padding: 0;
+
  }
 
 
@@ -40,13 +42,20 @@
      /* display: flex;
      align-items: center;
      justify-content: center; */
-     width: 70vw;
-     min-height: calc(100vh - 200px);
+     width: min(65vw,95%);
+     min-height: 50vw;
      transform: perspective(1000px);
      /* border: 5px solid red; */
-     
+     max-width: 1000px;
+    
 
+ }
 
+ .how-app-work .container .video-container  video {
+    max-width: 100%;
+     object-fit: contain;
+     overflow-clip-margin: content-box;
+     overflow: clip;
  }
 
  .how-app-work .container .video-container iframe {
@@ -97,7 +106,7 @@
 
      }
 
-     .how-app-work .container .video-container  {
+     .how-app-work .container .video-container {
          transform: none;
      }
  }

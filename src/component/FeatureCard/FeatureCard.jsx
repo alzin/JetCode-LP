@@ -40,7 +40,7 @@ const FeatureCard = (props) => {
 
     const handleScroll = () => {
         const cardHeight = card.current.offsetHeight
-        const cardOffsetTop = card.current.offsetTop + cardHeight * 0.85
+        const cardOffsetTop = card.current.offsetTop + cardHeight * 0.70
         const scrollY = window.scrollY
 
         // parallax scrolling only if width more than 992 px
