@@ -8,11 +8,14 @@
     font-size: 13px;
     color: white;
     overflow-x: hidden;
+    text-align: center;
 
 }
 
 .copy-write {
+    min-width: 250px;
     /* flex: 1; */
+    /* display: block; */
 }
 
 .terms {

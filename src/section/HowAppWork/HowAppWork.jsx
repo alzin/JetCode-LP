@@ -51,7 +51,7 @@ const HowAppWork = () => {
             <div className="container" ref={video}>
                 <h2 >Explore how app works</h2>
                 <div className="video-container" style={{ "transform": `perspective(1000px) rotateX(${rotateX}deg)` }}>
-                    <video controls="on" muted autoPlay >
+                    <video controls muted autoPlay >
                         <source src={JetCodeVideo} type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>

@@ -6,7 +6,7 @@ import './Header.css'
 
 //assets file
 
-import logo from '../../assets/images/logo192.png'
+import logo from '../../assets/images/logo.png'
 // import { IoAnalytics } from "react-icons/io5"
 
 //components
@@ -48,7 +48,7 @@ const Header = () => {
         <div className="logo">
           <Link to="/" >
             <img src={logo} alt="logo" />
-            <span>JetCode</span>
+            {/* <span>JetCode</span> */}
           </Link>
           {/* <svg height="100" stroke="#212529" strokeWidth="1" className="text-line"><text dominantBaseline="middle" textAnchor="right" y="50%">Slash AI</text></svg> */}
         </div>

@@ -4,19 +4,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: fit-content;
+    height: fit-content;
+
     /* overflow: hidden; */
 
 }
 
 .feed-card:nth-child(1) {
     position: sticky;
-    /* top: 50px; */
-    top: calc((100vh - 100px)*0.07);
+    /* top: 100px; */
+    top: calc((100vh - 100px)*0.13)
 }
 
 .feed-card:nth-child(2) {
     position: sticky;
-    top: calc((100vh - 100px)*0.07);
+    top: calc((100vh - 100px)*0.13);
 }
 
 .feed-card:nth-child(3) {
@@ -26,7 +29,6 @@
 }
 
 .feed-section {
-    padding: 100px 178px;
     transition: all 1s;
     position: relative;
     display: flex;
@@ -39,7 +41,7 @@
     overflow: hidden;
     /* max-height: 150vh; */
     min-height: 700px;
-    height: calc((100vh - (100px + 100vh * 0.07)) / 0.78);
+    height: calc((100vh - (100px + 100vh * 0.13)));
     background: linear-gradient(180deg, #2b1e41, rgba(43, 30, 65, 0)), #110d18;
     border-radius: 30px;
     box-shadow: 0 -4px 38px 0 rgba(0, 0, 0, .25);
@@ -54,8 +56,9 @@
 .feed-section .container .feed-head .head-section h2 {
     color: #f5f5f5;
     font-family: Satoshi, sans-serif;
-    font-size: 52px ;
-    font-style: normal;
+    font-size: 52px;
+    /* font-style: normal; */
+    letter-spacing: normal;
     font-weight: 600;
     line-height: 120% !important;
     margin: 0;
@@ -147,7 +150,7 @@
 }
 
 @media screen and (max-width:992px) {
-   
+
     .feed-section {
         padding: 0;
         transform: scale(1);
@@ -158,6 +161,8 @@
     .feed-card:nth-child(3) {
         position: relative;
         top: initial;
+        scale: 1;
+
     }
 
     .feed-section .container {
@@ -191,9 +196,10 @@
         font-size: 20px;
     }
 
-    .feed-section .container .feed-head .img-section{
+    .feed-section .container .feed-head .img-section {
         display: none;
     }
+
     .feed-section .container .feed-content {
         margin-top: 36px;
         /* background: red; */

@@ -36,6 +36,7 @@
     margin: 120px auto 0;
     max-width: 1460px;
     flex-wrap: wrap;
+
 }
 
 
@@ -88,7 +89,7 @@
 
 @media screen and (max-width:992px) {
     .super-charge-employee {
-        padding: 100px 10px;
+        padding: 100px 0px;
 
     }
 
@@ -105,8 +106,10 @@
         font-size: 15px
     }
 
+    
+
     .super-charge-employee .box-container .box-2 h3 {
-        font-size: 20px
+        font-size: 20px;
     }
 
     .super-charge-employee .box-container .box-2 p {

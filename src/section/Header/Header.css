@@ -15,13 +15,12 @@ header .container {
     align-items: center;
     justify-content: space-between;
     height: 100%;
-
 }
 
 header .container .logo {
     /* min-width: 60%; */
     width: 70%;
-    max-height: 100px;
+    height: 100px;
     /* background: red; */
     font-size: 34px;
     font-weight: 600;
@@ -36,10 +35,12 @@ header .container .logo span {
     -webkit-background-clip: text;
     color: transparent;
 }
-header .container .logo img{
-    max-width: 100%;
-    max-height: 100px;
-    margin-left: -20px;
+
+header .container .logo img {
+    /* background-color: aqua; */
+    /* max-width: 100%; */
+    height: 100px;
+    margin-left: -70px;
 }
 
 header .container .burger {
@@ -63,8 +64,8 @@ header .container nav ul {
 }
 
 header .container nav ul li {
-    padding: 0 12px;
-    margin: 6px;
+    padding: 0 10px;
+    margin-right: 40px;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.5;
@@ -75,15 +76,17 @@ header .container nav ul li {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background: red; */
 }
 
-header .container nav ul li a{
+header .container nav ul li a {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 header .container nav ul .list {
     position: relative;
 
@@ -138,10 +141,17 @@ header .container nav ul .list ul li {
 }
 
 
-
+@media (max-width: 1400px) {
+    header .container nav ul li{
+        margin-right: 20px;
+    }
+}
 @media (max-width: 1200px) {
     header .container .logo {
         width: 50%;
+    }
+    header .container nav ul li{
+        margin-right: 10px;
     }
 }
 
@@ -149,6 +159,11 @@ header .container nav ul .list ul li {
   start responsive header
 *************************/
 @media (max-width: 992px) {
+    
+    /* header .container .logo img {
+        display: none;
+    } */
+
     header .container nav {
         opacity: 1 !important;
         z-index: 99999999;

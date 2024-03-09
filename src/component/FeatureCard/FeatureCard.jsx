@@ -40,13 +40,17 @@ const FeatureCard = (props) => {
 
     const handleScroll = () => {
         const cardHeight = card.current.offsetHeight
-        const cardOffsetTop = card.current.offsetTop + cardHeight * 0.70
+        let cardOffsetTop
+        console.log(window.innerHeight);
+        if (window.innerHeight > 800) cardOffsetTop = card.current.offsetTop + (cardHeight - 100) * 0.92
+        else cardOffsetTop = card.current.offsetTop + (cardHeight - 200) * 0.92
+
         const scrollY = window.scrollY
 
         // parallax scrolling only if width more than 992 px
         if (props.id < 2 && window.innerWidth > 992) {
             if (scrollY >= cardOffsetTop) {
-                setScale(.78)
+                setScale(.74)
             }
             else {
                 setScale(.85)
