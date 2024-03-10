@@ -1,11 +1,11 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState, useCallback } from 'react'
 
 // css files
 import './FeatureCard.css'
 
 // components
-// import FeatureMobileNav from '../../component/FeatureMobileNav/FeatureMobileNav'
 import FeatureNavContent from '../../component/FeatureNavContent/FeatureNavContent'
+// import FeatureMobileNav from '../../component/FeatureMobileNav/FeatureMobileNav'
 // import FeatureNavIndicator from '../../component/FeatureNavIndicator/FeatureNavIndicator'
 
 
@@ -14,31 +14,35 @@ const FeatureCard = (props) => {
     const [activeIndex, setActiveIndex] = useState(0)
     const [featureNavbar, setFeatureNavbar] = useState(props.data.FeatureNavbar)
 
-
     //active one of featureNav item
-    const handelActive = (index) => {
 
+    const handelActive = useCallback((index) => {
         setActiveIndex(index)
-
         setFeatureNavbar(
             featureNavbar.map(opj =>
                 (opj.id === index ? { ...opj, isActive: true } : { ...opj, isActive: false }))
         )
-    }
-
+    }, [featureNavbar]);
+    // const handelActive = (index) => {
+    //     setActiveIndex(index)
+    //     setFeatureNavbar(
+    //         featureNavbar.map(opj =>
+    //             (opj.id === index ? { ...opj, isActive: true } : { ...opj, isActive: false }))
+    //     )
+    // }
 
     // active circle in mobile featureNav (mobile version)
-    const activateIndex = (i) => {
-        if (i < 0) handelActive(props.data.FeatureNavbar.length + i)
-        else handelActive(i)
-    }
+    // const activateIndex = (i) => {
+    //     if (i < 0) handelActive(props.data.FeatureNavbar.length + i)
+    //     else handelActive(i)
+    // }
 
 
     //scall feature card when scrolling down 
     const card = useRef("")
     const [scale, setScale] = useState(1)
 
-    const handleScroll = () => {
+    const handleScroll = useCallback(() => {
         const cardHeight = card.current.offsetHeight
         let cardOffsetTop
         console.log(window.innerHeight);
@@ -56,7 +60,9 @@ const FeatureCard = (props) => {
                 setScale(.85)
             }
         }
-    }
+    }, [props.id]);
+
+
 
     useEffect(() => {
         setActiveIndex(0)
@@ -66,7 +72,9 @@ const FeatureCard = (props) => {
         return () => {
             window.removeEventListener("scroll", handleScroll)
         }
-    }, [activeIndex])
+    }, [activeIndex, handelActive, handleScroll])
+
+
 
     return (
         <div className="feed-card" ref={card} style={{ "transform": `scale(${scale})` }}>

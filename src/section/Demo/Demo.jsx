@@ -1,14 +1,14 @@
 import { useEffect, useRef, useState } from 'react'
 
 // css files
-import './HowAppWork.css'
+import './Demo.css'
 
 // assets
 import JetCodeVideo from '../../assets/videos/saas_demo.mp4'
 // import YouTubeVideo from '../../component/YouTubeVideo/YouTubeVideo'
 
 
-const HowAppWork = () => {
+const Demo = () => {
     const [rotateX, setRotateX] = useState(30)
     const video = useRef(0)
 
@@ -62,4 +62,4 @@ const HowAppWork = () => {
     )
 }
 
-export default HowAppWork
+export default Demo

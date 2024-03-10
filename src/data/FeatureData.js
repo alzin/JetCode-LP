@@ -24,7 +24,7 @@ import WellnessTracking from "../assets/videos/wellness_tracking.webm"
 
 import { IoAnalytics } from "react-icons/io5"
 
-const FeatureTriibeData = [
+const FeaturesData = [
     {
         "id": 0,
         "indicatorWidth": 200,
@@ -131,4 +131,4 @@ const FeatureTriibeData = [
 ]
 
 
-export default FeatureTriibeData
+export default FeaturesData

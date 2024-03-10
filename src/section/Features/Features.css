@@ -1,4 +1,4 @@
-.feature-triibe {
+.features{
     background: #110d18;
     padding: 100px 0 0px;
     /* overflow-x: hidden; */
@@ -14,13 +14,13 @@
 
 
 @media screen and (max-width:1440px) {
-    .feature-triibe {
+    .features {
         padding-top: 100px;
     }
 }
 
 @media screen and (max-width:992px) {
-    .feature-triibe {
+    .features {
         padding-top: 0;
     }
 }

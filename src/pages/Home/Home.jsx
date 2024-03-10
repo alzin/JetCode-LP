@@ -2,21 +2,18 @@ import './Home.css'
 
 // sections
 import Hero from '../../section/Hero/Hero'
-import HowAppWork from '../../section/HowAppWork/HowAppWork'
-import FreqQuestion from '../../section/FreqQuestion/FreqQuestion'
-import WhitePaper from '../../section/WhitePaper/WhitePaper'
-import SuperchargeEmployee from '../../section/SuperchargeEmployee/SuperchargeEmployee'
-import FeatureTriibe from '../../section/FeatureTriibe/FeatureTriibe'
-
+import Demo from '../../section/Demo/Demo'
+import Supercharge from '../../section/Supercharge/Supercharge'
+import Features from '../../section/Features/Features'
 
 
 const Home = () => {
   return (
     <>
       <Hero />
-      <FeatureTriibe />
-      <SuperchargeEmployee />
-      <HowAppWork />
+      <Features />
+      <Supercharge />
+      <Demo />
       {/* <FreqQuestion /> */}
       {/* <WhitePaper /> */}
     </>

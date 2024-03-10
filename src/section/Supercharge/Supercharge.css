@@ -1,4 +1,4 @@
-.super-charge-employee {
+.super-charge {
     min-height: 100vh;
     padding: 100px 90px;
     text-align: center;
@@ -6,7 +6,7 @@
     background-color: var(--white-color);
 }
 
-.super-charge-employee h2 {
+.super-charge h2 {
     color: #2c2c2c;
     font-size: 56px;
     font-style: normal;
@@ -17,7 +17,7 @@
     padding: 0;
 }
 
-.super-charge-employee h5 {
+.super-charge h5 {
     color: #4f4f4f;
     font-size: 24px;
     font-style: normal;
@@ -30,7 +30,7 @@
 
 }
 
-.super-charge-employee .box-container {
+.super-charge .box-container {
     display: flex;
     gap: 140px;
     margin: 120px auto 0;
@@ -41,78 +41,78 @@
 
 
 @media screen and (max-width:1450px) {
-    .super-charge-employee .box-container {
+    .super-charge .box-container {
         gap: 60px
     }
 }
 
 @media screen and (max-width:1400px) {
-    .super-charge-employee {
+    .super-charge {
         background: #fff;
         padding: 90px 75px;
         text-align: center
     }
 
-    .super-charge-employee h2 {
+    .super-charge h2 {
         font-size: 48px
     }
 
-    .super-charge-employee h5 {
+    .super-charge h5 {
         font-size: 20px
     }
 
-    .super-charge-employee .box-container {
+    .super-charge .box-container {
         display: flex;
         gap: 40px;
         margin: 45px auto 0;
         max-width: 1460px
     }
 
-    .super-charge-employee .box-container .box-2 {
+    .super-charge .box-container .box-2 {
         padding: 30px 36px;
         text-align: center
     }
 
-    .super-charge-employee .box-container .box-2 h3 {
+    .super-charge .box-container .box-2 h3 {
         font-size: 26px
     }
 
-    .super-charge-employee .box-container .box-2 p {
+    .super-charge .box-container .box-2 p {
         font-size: 18px
     }
 
-    .super-charge-employee .box-container .box-2 img {
+    .super-charge .box-container .box-2 img {
         max-width: 100%
     }
 
 }
 
 @media screen and (max-width:992px) {
-    .super-charge-employee {
+    .super-charge {
         padding: 100px 0px;
 
     }
 
-    .super-charge-employee .box-container {
+    .super-charge .box-container {
         flex-wrap: wrap;
     }
 
-    .super-charge-employee h2 {
+    .super-charge h2 {
         font-size: 35px;
 
     }
 
-    .super-charge-employee h5 {
+    .super-charge h5 {
         font-size: 15px
     }
 
     
 
-    .super-charge-employee .box-container .box-2 h3 {
+    .super-charge .box-container .box-2 h3 {
         font-size: 20px;
     }
 
-    .super-charge-employee .box-container .box-2 p {
+    .super-charge .box-container .box-2 p {
         font-size: 12px
     }
 

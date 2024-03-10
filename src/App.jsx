@@ -33,14 +33,13 @@ const App = () => {
     setTimeout(() => {
       setIsLoading(true);
     }, 2000)
-    // console.log("contact")
 
   }, [isLoading])
 
   return (
     <>
       {isLoading ?
-        <Router basename={'/TriibeTask'}>
+        <Router basename={'/JetCode'}>
           <Header />
           <Container>
             <Routes>

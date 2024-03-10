@@ -2,7 +2,7 @@
 import './FeatureNavContent.css'
 
 //components
-import Buttons from '../../component/Buttons/Buttons'
+// import Buttons from '../../component/Buttons/Buttons'
 
 const FeatureNavContent = (props) => {
     return (

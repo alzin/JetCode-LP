@@ -1,5 +1,5 @@
 // css files
-import './SuperchargeEmployee.css'
+import './Supercharge.css'
 
 // assets
 import Ai_1 from '../../assets/images/ai_1.svg'
@@ -8,9 +8,9 @@ import Ai_2 from '../../assets/images/ai_2.svg'
 import SuperChargeBox from '../../component/SuperChargeBox/SuperChargeBox'
 
 
-const SuperchargeEmployee = () => {
+const Supercharge = () => {
     return (
-        <section className="super-charge-employee">
+        <section className="super-charge">
             <h2>Supercharge your development with AI</h2>
             <h5>
 
@@ -25,4 +25,4 @@ const SuperchargeEmployee = () => {
     )
 }
 
-export default SuperchargeEmployee
+export default Supercharge
