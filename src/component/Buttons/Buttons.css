@@ -15,6 +15,9 @@
     color: var(--white-color) !important;
     line-height: 19px;
     text-decoration: none;
+    
+    /* add */
+    font-size: 17px;
 }
 
 .BookADemo {

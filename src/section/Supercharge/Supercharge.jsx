@@ -10,10 +10,9 @@ import SuperChargeBox from '../../component/SuperChargeBox/SuperChargeBox'
 
 const Supercharge = () => {
     return (
-        <section className="super-charge">
-            <h2>Supercharge your development with AI</h2>
+        <section className="super-charge container">
+            <h2 className='gradiant-text'>Supercharge your development with AI</h2>
             <h5>
-
                 Input your project requirements and let our AI work its magic, generating clean, efficient, and ready-to-use code
             </h5>
             <div className="box-container">

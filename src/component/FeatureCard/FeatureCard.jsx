@@ -11,18 +11,18 @@ import FeatureNavContent from '../../component/FeatureNavContent/FeatureNavConte
 
 const FeatureCard = (props) => {
 
-    const [activeIndex, setActiveIndex] = useState(0)
-    const [featureNavbar, setFeatureNavbar] = useState(props.data.FeatureNavbar)
+    // const [activeIndex, setActiveIndex] = useState(0)
+    const [featureNavbar] = useState(props.data.FeatureNavbar)
 
     //active one of featureNav item
 
-    const handelActive = useCallback((index) => {
-        setActiveIndex(index)
-        setFeatureNavbar(
-            featureNavbar.map(opj =>
-                (opj.id === index ? { ...opj, isActive: true } : { ...opj, isActive: false }))
-        )
-    }, [featureNavbar]);
+    // const handelActive = useCallback((index) => {
+    //     setActiveIndex(index)
+    //     setFeatureNavbar(
+    //         featureNavbar.map(opj =>
+    //             (opj.id === index ? { ...opj, isActive: true } : { ...opj, isActive: false }))
+    //     )
+    // }, [featureNavbar]);
     // const handelActive = (index) => {
     //     setActiveIndex(index)
     //     setFeatureNavbar(
@@ -65,14 +65,14 @@ const FeatureCard = (props) => {
 
 
     useEffect(() => {
-        setActiveIndex(0)
-        handelActive(activeIndex);
+        // setActiveIndex(0)
+        // handelActive(activeIndex);
 
         window.addEventListener("scroll", handleScroll)
         return () => {
             window.removeEventListener("scroll", handleScroll)
         }
-    }, [activeIndex, handelActive, handleScroll])
+    }, [handleScroll])
 
 
 

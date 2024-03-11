@@ -75,7 +75,11 @@ button {
 
 
 
-
+.gradiant-text {
+  color: transparent !important;
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+}
 
 @media (min-width: 992px) {
   .container {

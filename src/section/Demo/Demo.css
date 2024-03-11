@@ -19,7 +19,8 @@
      flex-direction: column;
 
      position: sticky;
-     top: 75px;
+     top: max(calc((50vw - 100px)/6), 70px);
+     ;
      overflow: hidden;
      /* border: 5px solid red; */
  }
@@ -35,11 +36,19 @@
      padding: 0;
 
  }
+ .how-app-work .container h2::after{
+    content: "";
+    display: block;
+    width: 50%;
+    height: 5px;
+    margin: 10px auto 0px;
+    background: var(--primary-gradient);
 
+}
 
  .how-app-work .container .video-container {
      z-index: -1;
-     margin-top: 40px;
+     margin-top: max(calc((50vw - 100px)/6), 40px);
      /* display: flex;
      align-items: center;
      justify-content: center; */
@@ -77,8 +86,9 @@
  @media screen and (max-width:992px) {
      .how-app-work {
          background-color: #110d18;
-         min-height: calc(100vh - 100px);
-         padding: 0 20px;
+         min-height: fit-content;
+         padding: 30px 20px;
+         padding-bottom: 30px;
 
      }
 

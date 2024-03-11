@@ -1,6 +1,6 @@
 header {
     width: 100vw;
-    height: 100px;
+    /* height: 100px; */
     box-shadow: 0 0 10px var(--dark-color);
     background-color: var(--white-color);
     /* background-color: var(--dark-color); */
@@ -8,6 +8,9 @@ header {
     z-index: 9999;
     position: sticky;
     top: 0;
+    /* add */
+    height: 85px;
+
 }
 
 header .container {
@@ -20,7 +23,7 @@ header .container {
 header .container .logo {
     /* min-width: 60%; */
     width: 70%;
-    height: 100px;
+    height: 85px;
     /* background: red; */
     font-size: 34px;
     font-weight: 600;
@@ -39,7 +42,7 @@ header .container .logo span {
 header .container .logo img {
     /* background-color: aqua; */
     /* max-width: 100%; */
-    height: 100px;
+    height: 85px;
     margin-left: -70px;
 }
 
@@ -59,24 +62,27 @@ header .container nav ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100px;
+    height: 85px;
 
 }
 
 header .container nav ul li {
     padding: 0 10px;
-    margin-right: 40px;
-    font-size: 20px;
+    /* margin-right: 40px;
+    font-size: 20px; */
     font-weight: 500;
     line-height: 1.5;
     color: var(--dark-color);
     cursor: pointer;
     z-index: 99;
-    height: 100px;
+    height: 85px;
     display: flex;
     justify-content: center;
     align-items: center;
     /* background: red; */
+    /* add */
+    margin-right: 15px;
+    font-size: 17px;
 }
 
 header .container nav ul li a {
@@ -142,15 +148,17 @@ header .container nav ul .list ul li {
 
 
 @media (max-width: 1400px) {
-    header .container nav ul li{
+    header .container nav ul li {
         margin-right: 20px;
     }
 }
+
 @media (max-width: 1200px) {
     header .container .logo {
         width: 50%;
     }
-    header .container nav ul li{
+
+    header .container nav ul li {
         margin-right: 10px;
     }
 }
@@ -159,11 +167,14 @@ header .container nav ul .list ul li {
   start responsive header
 *************************/
 @media (max-width: 992px) {
-    
-    /* header .container .logo img {
-        display: none;
-    } */
 
+    /* add */
+    header .header .container .logo header .container .logo img,header .container nav ul{
+        height: 70px;
+    }
+    .container .logo img{
+        margin-left: -60px !important;
+    }
     header .container nav {
         opacity: 1 !important;
         z-index: 99999999;
