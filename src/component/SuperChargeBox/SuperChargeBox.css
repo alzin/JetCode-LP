@@ -30,9 +30,12 @@
 }
 
 .super-charge .box-container .box-2 img {
-    max-width: 100%;
-    visibility: hidden;
+    max-width: 60%;
+    
+    /* background-image: var(--primary-gradient); */
+    /* visibility: hidden; */
 }
+
 
 @media screen and (max-width:1400px) {
     .box-container .box-2 {

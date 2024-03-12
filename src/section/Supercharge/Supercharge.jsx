@@ -2,9 +2,12 @@
 import './Supercharge.css'
 
 // assets
-import Ai_1 from '../../assets/images/ai_1.svg'
-import Needle from '../../assets/images/needle.svg'
-import Ai_2 from '../../assets/images/ai_2.svg'
+
+import Platform from '../../assets/images/platform.svg'
+import Time from '../../assets/images/time.svg'
+import Step from '../../assets/images/step.svg'
+
+
 import SuperChargeBox from '../../component/SuperChargeBox/SuperChargeBox'
 
 
@@ -16,9 +19,9 @@ const Supercharge = () => {
                 Input your project requirements and let our AI work its magic, generating clean, efficient, and ready-to-use code
             </h5>
             <div className="box-container">
-                <SuperChargeBox SrcImg={Ai_1} AltImage="Ai_1" BoxTitle="Step-by-Step Implementation Guides" BoxContent="Get more than just code. Our platform provides detailed implementation guides to ensure seamless integration and deployment." />
-                <SuperChargeBox SrcImg={Needle} AltImage="Needle" BoxTitle="Cross-Platform Support" BoxContent="Whether you're developing a cutting-edge web application, a mobile app, or software for any platform, JetCode has you covered." />
-                <SuperChargeBox SrcImg={Ai_2} AltImage="Ai_2" BoxTitle="Save Time and Resources" BoxContent="Eliminate the need to sift through countless resources or debug patchwork code. JetCode streamlines your development process, freeing up your time to focus on innovation and refinement." />
+                <SuperChargeBox SrcImg={Step} AltImage="Ai_1" BoxTitle="Step-by-Step Implementation Guides" BoxContent="Get more than just code. Our platform provides detailed implementation guides to ensure seamless integration and deployment." />
+                <SuperChargeBox SrcImg={Platform} AltImage="Needle" BoxTitle="Cross-Platform Support" BoxContent="Whether you're developing a cutting-edge web application, a mobile app, or software for any platform, JetCode has you covered." />
+                <SuperChargeBox SrcImg={Time} AltImage="Ai_2" BoxTitle="Save Time and Resources" BoxContent="Eliminate the need to sift through countless resources or debug patchwork code. JetCode streamlines your development process, freeing up your time to focus on innovation and refinement." />
             </div>
         </section>
     )

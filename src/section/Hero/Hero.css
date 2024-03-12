@@ -149,6 +149,7 @@
 .blur {
     top: 50px;
     right: -100px;
+    rotate: 180deg;
     /* opacity: .7; */
     background: var(--primary-gradient);
     overflow: hidden;

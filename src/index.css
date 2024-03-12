@@ -4,7 +4,8 @@
   --white-color: #fff;
   --dark-color: #212529;
   --paragraph-color: #2c2c2c;
-  --primary-gradient: linear-gradient(93deg, #9e5cf4 .87%, #5b69e6 93.09%);
+  /* --primary-gradient: linear-gradient(93deg, #9e5cf4 .87%, #5b69e6 93.09%); */
+  --primary-gradient: linear-gradient(93deg, #9e5cf4, #5b69e6, #e8505a);
 
   --main-font-size: 18px;
 
