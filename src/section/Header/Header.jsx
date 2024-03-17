@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Link as SLink } from 'react-scroll'
+// import { Link as SLink } from 'react-scroll'
 //css files
 import './Header.css'
 
@@ -12,8 +12,8 @@ import logo from '../../assets/images/logo.png'
 //components
 import Burger from '../../component/Burger/Burger'
 import Buttons from '../../component/Buttons/Buttons'
+import ScrollTo from '../../component/ScrollTo'
 // import {SolutionDropDown } from '../../component/DropDown/DropDown'
-
 const Header = () => {
 
   const [showMenu, setShowMenu] = useState(false)
@@ -24,8 +24,10 @@ const Header = () => {
   useEffect(() => {
     setShowMenu(false)
     // setShowDropDown(false)
-    window.scrollTo(0, 0)
+    if (location.hash === '') window.scrollTo(0, 0)
+    else ScrollTo(location.hash.slice(1))
   }, [location])
+
 
 
 
@@ -66,16 +68,10 @@ const Header = () => {
               </ul>
             </li> */}
             <li className='hvr-underline-from-left'>
-              {location.pathname === "/" ?
-                <SLink to='features' onClick={handleMenu}>Features</SLink> :
-                <Link to='/' onClick={handleMenu}>Features</Link>
-              }
+              <a href="/JetCode#features" onClick={handleMenu}>Features</a>
             </li>
             <li className='hvr-underline-from-left'>
-              {location.pathname === "/" ?
-                <SLink to='demo' onClick={handleMenu}>Demo</SLink> :
-                <Link to='/' onClick={handleMenu}>Demo</Link>
-              }
+              <a href='/JetCode#demo' onClick={handleMenu}>Demo</a>
             </li>
             <li className='hvr-underline-from-left'><Link to='/contact' onClick={handleMenu}>Contact Us</Link></li>
           </ul>

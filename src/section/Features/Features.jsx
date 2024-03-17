@@ -9,7 +9,7 @@ import FeaturesData from '../../data/FeatureData'
 
 const Features = () => {
     return (
-        <section className="features" name="features">
+        <section className="features" id="features">
             {FeaturesData.map((item, index) =>
                 <FeatureCard key={index} id={item.id} data={item} />
             )}

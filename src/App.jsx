@@ -45,13 +45,6 @@ const App = () => {
             <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/contact' element={<ContactUs />} />
-
-              {/* <Route path='/faqs' element={<Faqs />} />
-              <Route path='/pricing' element={<Pricing />} />
-              <Route path='/employee-engagement' element={<EmployeeEngagement />} />
-              <Route path='/wellness' element={<Wellness />} />
-              <Route path='/analytics' element={<Analytics />} />
-              <Route path='/whitepaper-request' element={<WhitepaperRequest />} /> */}
             </Routes>
           </Container>
           <Footer />

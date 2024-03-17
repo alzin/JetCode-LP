@@ -58,7 +58,7 @@ const Demo = () => {
                     {/* <YouTubeVideo videoId="G1-ZuhjnvsM"/> */}
                 </div>
             </div>
-            <span name="demo"></span>
+            <span id="demo"></span>
         </section>
     )
 }
