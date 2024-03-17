@@ -68,10 +68,10 @@ const Header = () => {
               </ul>
             </li> */}
             <li className='hvr-underline-from-left'>
-              <a href="/JetCode#features" onClick={handleMenu}>Features</a>
+              <a href="/#features" onClick={handleMenu}>Features</a>
             </li>
             <li className='hvr-underline-from-left'>
-              <a href='/JetCode#demo' onClick={handleMenu}>Demo</a>
+              <a href='/#demo' onClick={handleMenu}>Demo</a>
             </li>
             <li className='hvr-underline-from-left'><Link to='/contact' onClick={handleMenu}>Contact Us</Link></li>
           </ul>

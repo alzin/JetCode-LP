@@ -29,17 +29,13 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(false)
 
   useEffect(() => {
-
-    setTimeout(() => {
-      setIsLoading(true);
-    }, 2000)
-
-  }, [isLoading])
-
+    setIsLoading(true);
+  }, [])
+  // basename={'/JetCode'}
   return (
     <>
       {isLoading ?
-        <Router basename={'/JetCode'}>
+        <Router >
           <Header />
           <Container>
             <Routes>
