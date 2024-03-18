@@ -1,6 +1,6 @@
 import './ContactUs.css'
 import ContactImg from '../../assets/images/ai_1.svg'
-import { useState, useEffect, useRef } from 'react'
+import { useState, useRef } from 'react'
 import emailjs from "@emailjs/browser";
 
 const ContactUs = () => {
@@ -9,12 +9,9 @@ const ContactUs = () => {
     const sendEmail = (e) => {
         e.preventDefault();
         emailjs
-            .sendForm(
-                "service_0orlrkc",
-                "template_fabncd4",
-                form.current,
-                "mqYufy-Epq6lV-Wdk",
-            )
+            .sendForm('service_qxw4o28', 'template_ka2xym3', form.current, {
+                publicKey: 'AvfEc8p2EEsvpIGTh',
+            })
             .then(
                 (result) => {
                     console.log(result.text);
@@ -39,11 +36,6 @@ const ContactUs = () => {
         const { name, value } = e.target
         setInfo({ ...info, [name]: value })
     }
-
-    useEffect(() => {
-        console.log(info)
-    }, [info])
-
 
     return (
         <div className='contact-us'>
