@@ -12,7 +12,7 @@ import logo from '../../assets/images/logo.png'
 //components
 import Burger from '../../component/Burger/Burger'
 import Buttons from '../../component/Buttons/Buttons'
-import ScrollTo from '../../component/ScrollTo'
+// import ScrollTo from '../../component/ScrollTo'
 // import {SolutionDropDown } from '../../component/DropDown/DropDown'
 const Header = () => {
 
@@ -23,9 +23,6 @@ const Header = () => {
 
   useEffect(() => {
     setShowMenu(false)
-    // setShowDropDown(false)
-    if (location.hash === '') window.scrollTo(0, 0)
-    else ScrollTo(location.hash.slice(1))
   }, [location])
 
 

@@ -46,20 +46,22 @@ const Demo = () => {
 
 
     return (
-        // https://youtu.be/G1-ZuhjnvsM?si=2AnRohLedxt3Yyfx
-        <section className="how-app-work">
-            <div className="container" ref={video}>
-                <h2 className='gradiant-text'>Explore how app works</h2>
-                <div className="video-container" style={{ "transform": `perspective(1000px) rotateX(${rotateX}deg)` }}>
-                    <video controls muted autoPlay>
-                        <source src={JetCodeVideo} type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
-                    {/* <YouTubeVideo videoId="G1-ZuhjnvsM"/> */}
+        <>
+            <section className="how-app-work">
+                <div className="container" ref={video}>
+                    <h2 className='gradiant-text'>Explore how app works</h2>
+                    <div className="video-container" style={{ "transform": `perspective(1000px) rotateX(${rotateX}deg)` }}>
+                        <video controls muted autoPlay>
+                            <source src={JetCodeVideo} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                        {/* <YouTubeVideo videoId="G1-ZuhjnvsM"/> */}
+                    </div>
                 </div>
-            </div>
-            <span id="demo"></span>
-        </section>
+                <span id="demo"></span>
+            </section>
+
+        </>
     )
 }
 

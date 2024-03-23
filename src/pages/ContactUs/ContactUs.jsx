@@ -1,9 +1,16 @@
 import './ContactUs.css'
 import ContactImg from '../../assets/images/ai_1.svg'
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import emailjs from "@emailjs/browser";
+import { useLocation } from 'react-router-dom';
 
 const ContactUs = () => {
+    const location = useLocation()
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [location])
+
 
     const form = useRef();
     const sendEmail = (e) => {

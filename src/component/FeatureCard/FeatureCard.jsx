@@ -45,7 +45,7 @@ const FeatureCard = (props) => {
     const handleScroll = useCallback(() => {
         const cardHeight = card.current.offsetHeight
         let cardOffsetTop
-        console.log(window.innerHeight);
+        // console.log(window.innerHeight);
         if (window.innerHeight > 800) cardOffsetTop = card.current.offsetTop + (cardHeight - 100) * 0.92
         else cardOffsetTop = card.current.offsetTop + (cardHeight - 200) * 0.92
 
