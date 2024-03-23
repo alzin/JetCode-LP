@@ -1,0 +1,217 @@
+.contact-us {
+    width: 100vw;
+    min-height: 670px;
+    height: calc(100vh - 100px);
+    overflow-x: hidden;
+    background: #110D18;
+    padding: 20px 0;
+}
+
+.contact-us .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 100%;
+    /* background-color: red; */
+}
+
+.contact-us .container .contact-l {
+    /* flex: 1; */
+    width: 60% !important;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+
+
+
+}
+
+.contact-us .container .contact-l img {
+    max-width: 100%;
+    flex: 1 1;
+
+}
+
+.contact-us .container .contact-r {
+    /* flex: 1 1; */
+    width: 60% !important;
+    background-color: red;
+
+    background: #110D18;
+    opacity: .9;
+    height: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    background-color: var(--main-color-1);
+
+
+}
+
+.contact-r::before {
+    content: '';
+    z-index: 1;
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg, transparent, var(--main-color-2), var(--main-color-2));
+    animation: animate 6s linear infinite;
+}
+
+.contact-r::after {
+    content: '';
+    z-index: 1;
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg, transparent, var(--main-color-2), var(--main-color-2));
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+
+@keyframes animate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+form {
+    position: absolute;
+    inset: 4px;
+    background: #110D18;
+    padding: 50px 40px;
+    border-radius: 8px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 6px);
+}
+
+h2 {
+    color: var(--white-color);
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-size: 25px;
+}
+
+.inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 35px;
+}
+
+.inputBox input,
+.inputBox textarea {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    color: var(--white-color);
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.inputBox textarea {
+    padding: 0px 10px 10px;
+    margin-top: 20px;
+    resize: none;
+}
+
+
+.inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 20px 0px 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: var(--white-color);
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+.inputBox input:not([value=""])~span,
+.inputBox input:focus~span,
+.inputBox textarea:valid~span,
+.inputBox textarea:focus~span {
+    color: var(--white-color);
+    transform: translateX(0px) translateY(-34px);
+    font-size: 0.75em;
+}
+
+.inputBox i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--main-color-2);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+}
+
+.inputBox input:not([value=""])~i,
+.inputBox input:focus~i {
+    height: 44px;
+}
+
+.inputBox textarea:valid~i,
+.inputBox textarea:focus~i {
+    height: 130px;
+}
+
+input[type="submit"] {
+    border: none;
+    outline: none;
+    padding: 20px;
+    background: var(--main-color-2);
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 600;
+    width: 150px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 17px;
+    color: var(--white-color);
+    margin-left: auto;
+}
+
+input[type="submit"]:active {
+    opacity: 0.8;
+}
+
+
+
+@media screen and (max-width:992px) {
+    .contact-us .container .contact-l {
+        display: none;
+    }
+
+    .contact-us .container .contact-r {
+        /* flex: 1; */
+        width: 90% !important;
+    }
+
+    input[type="submit"] {
+        width: 100px;
+        padding: 14;
+        font-size: 12px;
+    }
+}

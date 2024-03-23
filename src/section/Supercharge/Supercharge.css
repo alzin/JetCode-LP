@@ -1,0 +1,129 @@
+.super-charge {
+    min-height: 100vh;
+    padding: 100px 90px;
+    text-align: center;
+    overflow-x: hidden;
+    background-color: var(--white-color);
+}
+
+.super-charge h2 {
+    color: #2c2c2c;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    letter-spacing: normal;
+    padding: 0;
+}
+.super-charge h2::after{
+    content: "";
+    display: block;
+    width: 50%;
+    height: 5px;
+    margin: 10px auto 30px;
+    background: var(--primary-gradient);
+
+}
+
+.super-charge h5 {
+    color: #4f4f4f;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    margin: 16px auto 0;
+    max-width: 800px;
+    padding: 0;
+    text-align: center;
+
+}
+
+.super-charge .box-container {
+    display: flex;
+    gap: 140px;
+    margin: 120px auto 0;
+    /* max-width: 1460px; */
+    flex-wrap: wrap;
+
+}
+
+
+@media screen and (max-width:1450px) {
+    .super-charge .box-container {
+        gap: 60px
+    }
+}
+
+@media screen and (max-width:1400px) {
+    .super-charge {
+        background: #fff;
+        padding: 90px 75px;
+        text-align: center
+    }
+
+    .super-charge h2 {
+        font-size: 48px
+    }
+
+    .super-charge h5 {
+        font-size: 20px
+    }
+
+    .super-charge .box-container {
+        display: flex;
+        gap: 40px;
+        margin: 45px auto 0;
+        max-width: 1460px
+    }
+
+    .super-charge .box-container .box-2 {
+        padding: 30px 36px;
+        text-align: center
+    }
+
+    .super-charge .box-container .box-2 h3 {
+        font-size: 26px
+    }
+
+    .super-charge .box-container .box-2 p {
+        font-size: 18px
+    }
+
+    .super-charge .box-container .box-2 img {
+        max-width: 100%
+    }
+
+}
+
+@media screen and (max-width:992px) {
+    .super-charge {
+        padding: 100px 0px;
+
+    }
+
+    .super-charge .box-container {
+        flex-wrap: wrap;
+    }
+
+    .super-charge h2 {
+        font-size: 35px;
+
+    }
+
+    .super-charge h5 {
+        font-size: 15px
+    }
+
+    
+
+    .super-charge .box-container .box-2 h3 {
+        font-size: 20px;
+    }
+
+    .super-charge .box-container .box-2 p {
+        font-size: 12px
+    }
+
+
+}

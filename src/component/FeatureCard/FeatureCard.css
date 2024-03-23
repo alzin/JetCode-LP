@@ -1,0 +1,208 @@
+.feed-card {
+    max-width: 1311px;
+    transition: all 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+
+    /* overflow: hidden; */
+
+}
+
+.feed-card:nth-child(1) {
+    position: sticky;
+    /* top: 100px; */
+    top: calc((100vh - 100px)*0.13)
+}
+
+.feed-card:nth-child(2) {
+    position: sticky;
+    top: calc((100vh - 100px)*0.13);
+}
+
+.feed-card:nth-child(3) {
+    position: sticky; 
+    top: calc(((100vh - 700px)));
+    scale: .85;
+}
+
+.feed-section {
+    transition: all 1s;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.feed-section .container {
+    overflow: hidden;
+    /* max-height: 150vh; */
+    min-height: 700px;
+    height: calc((100vh - (100px + 100vh * 0.13)));
+    background: linear-gradient(180deg, #2b1e41, rgba(43, 30, 65, 0)), #110d18;
+    border-radius: 30px;
+    box-shadow: 0 -4px 38px 0 rgba(0, 0, 0, .25);
+    padding: 79px 120px;
+}
+
+.feed-section .container .feed-head {
+    display: flex;
+    justify-content: space-between
+}
+
+.feed-section .container .feed-head .head-section h2 {
+    color: #f5f5f5;
+    font-family: Satoshi, sans-serif;
+    font-size: 52px;
+    /* font-style: normal; */
+    letter-spacing: normal;
+    font-weight: 600;
+    line-height: 120% !important;
+    margin: 0;
+    max-width: 840px;
+    padding: 0;
+    text-align: left;
+
+}
+
+.feed-section .container .feed-head .head-section h2 span {
+    color: #8338f8
+}
+
+.feed-section .container .feed-head .head-section p {
+    color: #c9c8c8;
+    font-family: Satoshi, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    margin: 24px 0 0;
+    max-width: 798px;
+    padding: 0;
+    text-align: left;
+
+}
+
+.feed-section .container .feed-head .img-section {
+    margin-right: -90px;
+    margin-top: -50px;
+    max-height: 250px;
+    width: 340px
+}
+
+.feed-section .container .feed-head .img-section img {
+    max-height: 250px;
+    max-width: 100%;
+    visibility: hidden;
+}
+
+.feed-section .container .feed-content {
+    margin-top: 30px;
+    text-align: left;
+
+}
+
+
+
+
+
+
+@media screen and (max-width:1600px) {
+    .feed-section {
+        padding: 60px 150px
+    }
+}
+
+@media screen and (max-width:1450px) {
+    .feed-section {
+        padding: 0;
+    }
+
+    .feed-section .container {
+        padding: 64px 90px
+    }
+
+    .feed-section .container .feed-head .head-section h2 {
+        font-size: 48px
+    }
+
+    .feed-section .container .feed-head .head-section p {
+        font-size: 22px;
+        margin-top: 50px
+    }
+
+    .feed-section .container .feed-content {
+        margin-top: 25px
+    }
+
+    .feed-section.minify {
+        transform: scale(.74)
+    }
+}
+
+@media screen and (max-width:1350px) {
+    .feed-section {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:992px) {
+
+    .feed-section {
+        padding: 0;
+        transform: scale(1);
+    }
+
+    .feed-card:nth-child(1),
+    .feed-card:nth-child(2),
+    .feed-card:nth-child(3) {
+        position: relative;
+        top: initial;
+        scale: 1;
+
+    }
+
+    .feed-section .container {
+        /* min-height: fit-content; */
+        background: linear-gradient(180deg, #2b1e41, #2b1e41), #110d18;
+        border-radius: 0;
+        box-shadow: 0 -1.22506px 11.63811px 0 rgba(0, 0, 0, .25);
+        margin-bottom: 80px;
+        padding: 44px 20px;
+        width: 100%;
+        min-height: 800px;
+
+        /* background: red; */
+
+    }
+
+    .feed-section .container .feed-head {
+        display: flex;
+        justify-content: space-between
+    }
+
+    .feed-section .container .feed-head .head-section h2 {
+        font-size: 32px !important;
+        line-height: 32px;
+        /* text-align: center */
+    }
+
+    .feed-section .container .feed-head .head-section p,
+    .feed-section .container .feed-head .img-section {
+        /* display: none */
+        font-size: 20px;
+    }
+
+    .feed-section .container .feed-head .img-section {
+        display: none;
+    }
+
+    .feed-section .container .feed-content {
+        margin-top: 36px;
+        /* background: red; */
+    }
+
+}

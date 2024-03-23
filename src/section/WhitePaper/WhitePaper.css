@@ -1,0 +1,119 @@
+.white-paper {
+    background: #110d18;
+    padding: 120px 0 240px
+}
+
+.white-paper .container {
+    padding-top: 70px;
+
+}
+
+.white-paper .container .banner {
+    align-items: center;
+    background-image: url(../../assets/images/bottom-banner.svg);
+    background-position: 50%;
+    background-size: cover;
+    border-radius: 42px;
+    display: flex;
+    justify-self: center;
+    min-height: 390px;
+}
+
+.white-paper .container .banner div {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.white-paper .container .banner h3 {
+    color: white;
+    font-family: Satoshi, sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    margin: 0 auto;
+    max-width: 812px;
+    padding: 0;
+    text-align: center
+}
+
+.white-paper .container .banner p {
+    color: white;
+    font-family: Satoshi, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%;
+    margin: 26px auto 0;
+    max-width: 812px;
+    padding: 0;
+    text-align: center
+}
+
+.white-paper .container .banner .btn-download {
+    align-items: center;
+    background: white;
+    border: 1px solid #9c5df4;
+    border-radius: 70px;
+    color: #5c6ae6;
+    display: flex;
+    font-family: Satoshi, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    height: 64px;
+    justify-content: center;
+    line-height: 22px;
+    margin: 48px auto 0;
+    padding: 20px 48px 22px;
+    width: fit-content
+}
+
+@media screen and (max-width:1450px) {
+    .white-paper {
+        padding: 60px 0 160px
+    }
+
+    .white-paper .container {
+        padding: 0 60px
+    }
+}
+
+@media screen and (max-width:992px) {
+    .white-paper {
+        padding: 100px 0 100px
+    }
+
+    .white-paper .container {
+        padding: 0 20px
+    }
+
+    .white-paper .container .banner {
+        background-image: url(../../assets/images/bottom-banner.svg);
+        background-position: 50%;
+        background-size: cover;
+        border-radius: 10px;
+        min-height: 220px;
+        padding: 24px 36px;
+    }
+
+    .white-paper .container .banner h3 {
+        font-size: 18px
+    }
+
+    .white-paper .container .banner p {
+        font-size: 12px;
+        margin-top: 8px
+    }
+
+    .white-paper .container .banner .btn-download {
+        border: 1px solid #9c5df4;
+        border-radius: 15px;
+        color: #5c6ae6;
+        font-size: 12px;
+        height: 30px;
+        margin-top: 12px;
+        padding: 12px
+    }
+}

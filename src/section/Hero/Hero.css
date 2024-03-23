@@ -1,0 +1,242 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: hidden;
+    min-height: calc(100vh - 80px);
+    margin-top: 10px;
+}
+
+.hero .hero-l {
+    /* width: 55%; */
+    /* add */
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px !important;
+}
+
+.hero .hero-l .top-post {
+    width: 100%;
+    /* margin-top: 0px; */
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+
+.hero .hero-l h1 {
+    width: 100%;
+    position: relative;
+    color: var(--dark-color);
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+}
+
+
+
+.hero .hero-l h1 .slideWord {
+    font-size: calc(var(--main-font-size) * 2);
+    height: 60px;
+    display: inline;
+    position: absolute;
+    text-indent: 8px
+        /* overflow: hidden; */
+
+}
+
+
+
+.hero .hero-l h1 .slideWord span {
+    width: 300px;
+    margin-left: 10px;
+    display: block;
+    animation: topToBottom 4.5s linear 0s infinite;
+    color: #7875ea;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+
+}
+
+.hero .hero-l h1 .slideWord span:nth-child(2) {
+    animation-delay: 1.5s;
+}
+
+.hero .hero-l h1 .slideWord span:nth-child(3) {
+    animation-delay: 3s;
+}
+
+@keyframes topToBottom {
+    0% {
+        opacity: 0
+    }
+
+    5% {
+        opacity: 0;
+        transform: translateY(-20px)
+    }
+
+    10% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+
+    25% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+
+    30% {
+        opacity: 0;
+        transform: translateY(20px)
+    }
+
+    80% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 0
+    }
+}
+
+
+.hero .hero-l p {
+    font-size: 15px;
+    /* margin-top: 10px; */
+    color: var(--dark-color);
+    opacity: .7;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+
+
+.hero .hero-l .hero-button {
+    /* margin-top: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+
+
+.hero .hero-r {
+
+    /* flex: 2 2; */
+    /* background-color:  #9592ee; */
+
+    /* add */
+    display: none;
+
+}
+
+.hero .hero-r img {
+    /* margin-top: 100px; */
+    max-width: 100%;
+    border-radius: 10px;
+    z-index: 9999;
+    visibility: hidden;
+}
+
+.blur {
+    top: 50px;
+    right: -100px;
+    rotate: 180deg;
+    /* opacity: .7; */
+    background: var(--primary-gradient);
+    overflow: hidden;
+}
+
+/************************* 
+  start responsive hero
+*************************/
+
+
+
+@media (max-width: 991px) {
+    .blur {
+        display: none;
+    }
+
+    .hero .hero-r {
+        display: none;
+    }
+
+    .hero .hero-l {
+        flex: 1 1;
+        /* width: 100%; */
+    }
+
+    .hero .hero-l h1 {
+        /* flex: 1; */
+        width: 100%;
+        max-width: 550px;
+        margin-top: 30px;
+        font-size: 30px;
+    }
+
+    .hero .hero-l p {
+        font-size: 15px;
+        max-width: 550px;
+    }
+
+    .hero .hero-l .hero-button {
+        width: 100%;
+        /* margin-left: -25px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        row-gap: 20px;
+    }
+
+    .hero .hero-l .hero-button .TryFreeButton,
+    .hero .hero-l .hero-button .BookADemo {
+        margin-top: 0px;
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .hero .hero-r img {
+        display: none;
+    }
+
+    .hero .hero-l h1 .slideWord {
+        font-size: calc(var(--main-font-size) * 1.5);
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .hero .hero-l h1 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .hero .hero-l p {
+        text-align: justify;
+
+    }
+
+    .hero .hero-l h1 .slideWord {
+        display: block;
+        width: 100%;
+
+    }
+
+    .hero .hero-l h1 .slideWord span {
+        width: 100%;
+        margin: 0;
+
+    }
+}
