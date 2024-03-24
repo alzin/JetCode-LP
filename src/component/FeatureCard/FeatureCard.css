@@ -23,7 +23,7 @@
 }
 
 .feed-card:nth-child(3) {
-    position: sticky; 
+    position: sticky;
     top: calc(((100vh - 700px)));
     scale: .85;
 }
@@ -150,10 +150,14 @@
 }
 
 @media screen and (max-width:992px) {
+    .feed-card {
+        width: 100%;
+    }
 
     .feed-section {
         padding: 0;
         transform: scale(1);
+        width: 100%;
     }
 
     .feed-card:nth-child(1),
@@ -173,10 +177,15 @@
         margin-bottom: 80px;
         padding: 44px 20px;
         width: 100%;
-        min-height: 800px;
-
+        height: fit-content;
+        min-height: fit-content;
+        margin-bottom: 40px;
         /* background: red; */
 
+    }
+
+    .features .feed-card:last-child .feed-section .container {
+        margin-bottom: 0px;
     }
 
     .feed-section .container .feed-head {
@@ -202,6 +211,7 @@
 
     .feed-section .container .feed-content {
         margin-top: 36px;
+        display: none;
         /* background: red; */
     }
 

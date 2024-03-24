@@ -176,7 +176,8 @@
 
      .tab-content .tab-pane .tab-body .tab-body-left p {
          font-size: 16px;
-         margin-top: 12px
+         margin-top: 12px;
+         display: none;
      }
 
      .tab-content .tab-pane .tab-body .tab-body-left .BookADemo {
@@ -185,7 +186,9 @@
 
      .tab-content .tab-pane .tab-body .tab-body-right,
      .tab-content .tab-pane .tab-body .tab-body-right video {
-         width: 100%
+         width: 100%;
+         /* background-color: red; */
+         display: none;
      }
 
      .tab-content .tab-pane .tab-body.tab-body-1 {

@@ -24,9 +24,9 @@ const Home = () => {
   return (
     <>
       <Hero />
+      <Demo />
       <Features />
       <Supercharge />
-      <Demo />
       <UseCases />
       {/* <FreqQuestion /> */}
       {/* <WhitePaper /> */}

@@ -85,16 +85,17 @@
      }
 
      .how-app-work .container video {
-         max-width: 900px
+         /* max-width: 900px; */
+         max-width: 100vh;
      }
  }
 
  @media screen and (max-width:992px) {
      .how-app-work {
-         background-color: #110d18;
+         /* background-color: #110d18; */
          min-height: fit-content;
          padding: 30px 20px;
-         padding-bottom: 30px;
+         padding-bottom: 60px;
 
      }
 

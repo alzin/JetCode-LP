@@ -6,7 +6,7 @@ import './Header.css'
 
 //assets file
 
-import logo from '../../assets/images/logo.png'
+import logo from '../../assets/images/JetCode2.png'
 // import { IoAnalytics } from "react-icons/io5"
 
 //components
@@ -65,10 +65,13 @@ const Header = () => {
               </ul>
             </li> */}
             <li className='hvr-underline-from-left'>
+              <a href="/#overview" onClick={handleMenu}>Overview</a>
+            </li>
+            <li className='hvr-underline-from-left'>
               <a href="/#features" onClick={handleMenu}>Features</a>
             </li>
             <li className='hvr-underline-from-left'>
-              <a href='/#demo' onClick={handleMenu}>Demo</a>
+              <a href='/#usecases' onClick={handleMenu}>Use Cases</a>
             </li>
             <li className='hvr-underline-from-left'><Link to='/contact' onClick={handleMenu}>Contact Us</Link></li>
           </ul>

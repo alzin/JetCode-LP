@@ -13,7 +13,7 @@ import 'swiper/css/navigation';
 const UseCases = () => {
 
     return (
-        <section className="use-case">
+        <section className="use-case" id="usecases">
             <div className="container">
                 <h2 className='gradiant-text'>Use Cases</h2>
                 <div className="video-container">
