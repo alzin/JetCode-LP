@@ -1,8 +1,11 @@
 
 // images
-import Feed1 from "../assets/images/feed-1.png"
-import Feed3 from "../assets/images/feed-3.png"
-import Wh from "../assets/images/Wh.png"
+// import Feed1 from "../assets/images/feed-1.png"
+// import Feed3 from "../assets/images/feed-3.png"
+// import Wh from "../assets/images/Wh.png"
+import AccelerateYourProjectTimeline from "../assets/images/AccelerateYourProjectTimeline2.png"
+import EmpowerYourTeam from "../assets/images/EmpowerYourTeam.png"
+import TransformYourIdeasintoCode from "../assets/images/TransformYourIdeasintoCode.png"
 
 
 
@@ -30,7 +33,7 @@ const FeaturesData = [
         "indicatorWidth": 200,
         "FeatureTitle": "Instantly Transform Your Ideas into Code with Our AI-Powered Tool",
         "FeatureContent": "Gone are the days of sifting through countless forums and documentation to find coding solutions. Input your system requirements, whether for web, mobile, or any platform, and our AI will deliver step-by-step code implementation tailored to your needs. ",
-        "FeatureImg": Feed1,
+        "FeatureImg": TransformYourIdeasintoCode,
         "FeatureNavbar": [
             {
                 "icon": <IoAnalytics className='icon' />,
@@ -77,7 +80,7 @@ const FeaturesData = [
         "indicatorWidth": 300,
         "FeatureTitle": "Accelerate Your Project Timeline from Months to Days",
         "FeatureContent": "Speed up your development process dramatically. With our tool, you eliminate the bottleneck of research and troubleshooting, allowing you to focus on creativity and innovation.",
-        "FeatureImg": Wh,
+        "FeatureImg":AccelerateYourProjectTimeline,
         "FeatureNavbar": [
             {
                 "icon": <IoAnalytics className='icon' />,
@@ -104,7 +107,7 @@ const FeaturesData = [
         "indicatorWidth": 300,
         "FeatureTitle": "Empower Your Team with AI-Driven Efficiency",
         "FeatureContent": "Enable your team to do more with less. Our tool is designed to augment the capabilities of your developers, allowing them to produce more while reducing the risk of burnout.",
-        "FeatureImg": Feed3,
+        "FeatureImg": EmpowerYourTeam,
         "FeatureNavbar": [
             {
                 "icon": <IoAnalytics className='icon' />,

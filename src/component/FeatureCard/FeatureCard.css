@@ -7,23 +7,21 @@
     width: fit-content;
     height: fit-content;
 
-    /* overflow: hidden; */
-
 }
 
-.feed-card:nth-child(1) {
+.feed-card:nth-child(2) {
     position: sticky;
     /* top: 100px; */
     top: calc((100vh - 100px)*0.13)
 }
 
-.feed-card:nth-child(2) {
+.feed-card:nth-child(3) {
     position: sticky;
     top: calc((100vh - 100px)*0.13);
 }
 
-.feed-card:nth-child(3) {
-    position: sticky; 
+.feed-card:nth-child(4) {
+    position: sticky;
     top: calc(((100vh - 700px)));
     scale: .85;
 }
@@ -87,21 +85,27 @@
 }
 
 .feed-section .container .feed-head .img-section {
-    margin-right: -90px;
-    margin-top: -50px;
-    max-height: 250px;
-    width: 340px
+    /* margin-right: -100px; */
+    /* margin-top: -50px; */
+    width: 400px;
+    /* background-color: red; */
 }
 
+/* .features> .feed-card:nth-child(2) .feed-section .container .feed-head .img-section{
+    margin-right: -50px;
+
+} */
 .feed-section .container .feed-head .img-section img {
-    max-height: 250px;
+    height: 400px;
     max-width: 100%;
-    visibility: hidden;
+    /* display: none; */
+    /* visibility: hidden; */
 }
 
 .feed-section .container .feed-content {
-    margin-top: 30px;
+    margin-top: -80px ;
     text-align: left;
+    /* background-color: red; */
 
 }
 
@@ -135,7 +139,7 @@
     }
 
     .feed-section .container .feed-content {
-        margin-top: 25px
+        margin-top: 0px
     }
 
     .feed-section.minify {
@@ -147,18 +151,24 @@
     .feed-section {
         padding: 0;
     }
+
+   
 }
 
 @media screen and (max-width:992px) {
+    .feed-card {
+        width: 100%;
+    }
 
     .feed-section {
         padding: 0;
         transform: scale(1);
+        width: 100%;
     }
 
-    .feed-card:nth-child(1),
     .feed-card:nth-child(2),
-    .feed-card:nth-child(3) {
+    .feed-card:nth-child(3),
+    .feed-card:nth-child(4) {
         position: relative;
         top: initial;
         scale: 1;
@@ -173,10 +183,15 @@
         margin-bottom: 80px;
         padding: 44px 20px;
         width: 100%;
-        min-height: 800px;
-
+        height: fit-content;
+        min-height: fit-content;
+        margin-bottom: 40px;
         /* background: red; */
 
+    }
+
+    .features .feed-card:last-child .feed-section .container {
+        margin-bottom: 0px;
     }
 
     .feed-section .container .feed-head {
@@ -201,7 +216,8 @@
     }
 
     .feed-section .container .feed-content {
-        margin-top: 36px;
+        /* margin-top: 36px; */
+        display: none;
         /* background: red; */
     }
 

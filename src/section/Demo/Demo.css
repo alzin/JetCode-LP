@@ -1,13 +1,12 @@
  .how-app-work {
-     min-height: 300vh;
+     min-height: 2000px;
      padding-top: 90px;
      padding-bottom: 100px;
      position: static;
      background-color: var(--white-color);
-
-
      /* overflow-x: hidden; */
  }
+
 
  .how-app-work .container {
      /* max-width: 1200px; */
@@ -20,7 +19,6 @@
 
      position: sticky;
      top: max(calc((50vw - 100px)/6), 70px);
-     ;
      overflow: hidden;
      /* border: 5px solid red; */
  }
@@ -36,15 +34,16 @@
      padding: 0;
 
  }
- .how-app-work .container h2::after{
-    content: "";
-    display: block;
-    width: 50%;
-    height: 5px;
-    margin: 10px auto 0px;
-    background: var(--primary-gradient);
 
-}
+ .how-app-work .container h2::after {
+     content: "";
+     display: block;
+     width: 50%;
+     height: 5px;
+     margin: 10px auto 0px;
+     background: var(--primary-gradient);
+
+ }
 
  .how-app-work .container .video-container {
      z-index: -1;
@@ -52,12 +51,13 @@
      /* display: flex;
      align-items: center;
      justify-content: center; */
-     width: 100%;
-     min-height: 50vw;
+
      transform: perspective(1000px);
      max-width: 1000px;
-
-
+     width: 100%;
+     aspect-ratio: 2/1;
+     /* background-color: red; */
+     /* height: calc(100vh - 200px); */
  }
 
  .how-app-work .container .video-container video {
@@ -69,7 +69,7 @@
      border: none;
      width: 100%;
      height: 100%;
-
+     /* background: #000; */
  }
 
  @media screen and (max-width:1450px) {
@@ -78,17 +78,27 @@
          padding-bottom: 90px
      }
 
-     .how-app-work .container video {
-         max-width: 900px
+     .how-app-work .container video,
+     .how-app-work .container iframe {
+         /* max-width: 900px; */
+         /* max-width: 100vh; */
      }
  }
 
  @media screen and (max-width:992px) {
+
+     #overview {
+         position: absolute;
+         top: 100vh;
+         display: block;
+         z-index: -9999999999999;
+     }
+
      .how-app-work {
-         background-color: #110d18;
+         /* background-color: #110d18; */
          min-height: fit-content;
-         padding: 30px 20px;
-         padding-bottom: 30px;
+         padding: 100px 20px;
+         /* padding-bottom: 60px; */
 
      }
 
@@ -109,7 +119,7 @@
          font-size: 16px
      }
 
-     .how-app-work .container video {
+     .how-app-work .container video .how-app-work .container iframe {
          width: 100%
      }
 

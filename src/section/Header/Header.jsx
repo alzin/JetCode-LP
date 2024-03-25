@@ -6,13 +6,13 @@ import './Header.css'
 
 //assets file
 
-import logo from '../../assets/images/logo.png'
+import logo from '../../assets/images/JetCode2.png'
 // import { IoAnalytics } from "react-icons/io5"
 
 //components
 import Burger from '../../component/Burger/Burger'
 import Buttons from '../../component/Buttons/Buttons'
-import ScrollTo from '../../component/ScrollTo'
+// import ScrollTo from '../../component/ScrollTo'
 // import {SolutionDropDown } from '../../component/DropDown/DropDown'
 const Header = () => {
 
@@ -23,9 +23,6 @@ const Header = () => {
 
   useEffect(() => {
     setShowMenu(false)
-    // setShowDropDown(false)
-    if (location.hash === '') window.scrollTo(0, 0)
-    else ScrollTo(location.hash.slice(1))
   }, [location])
 
 
@@ -33,7 +30,7 @@ const Header = () => {
 
   //show menu item
   const handleMenu = () => {
-    if (window.innerWidth < 1000)
+    if (window.innerWidth < 992)
       setShowMenu(pre => !pre);
   }
 
@@ -68,10 +65,13 @@ const Header = () => {
               </ul>
             </li> */}
             <li className='hvr-underline-from-left'>
+              <a href="/#overview" onClick={handleMenu}>Overview</a>
+            </li>
+            <li className='hvr-underline-from-left'>
               <a href="/#features" onClick={handleMenu}>Features</a>
             </li>
             <li className='hvr-underline-from-left'>
-              <a href='/#demo' onClick={handleMenu}>Demo</a>
+              <a href='/#usecases' onClick={handleMenu}>Use Cases</a>
             </li>
             <li className='hvr-underline-from-left'><Link to='/contact' onClick={handleMenu}>Contact Us</Link></li>
           </ul>

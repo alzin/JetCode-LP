@@ -178,14 +178,16 @@
     .hero .hero-l h1 {
         /* flex: 1; */
         width: 100%;
-        max-width: 550px;
-        margin-top: 30px;
+        /* max-width: 550px; */
+        text-align: center;
+        margin-top: 40px;
         font-size: 30px;
     }
 
     .hero .hero-l p {
         font-size: 15px;
         max-width: 550px;
+        display: none;
     }
 
     .hero .hero-l .hero-button {

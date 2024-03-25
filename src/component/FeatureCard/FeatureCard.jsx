@@ -43,12 +43,8 @@ const FeatureCard = (props) => {
     const [scale, setScale] = useState(1)
 
     const handleScroll = useCallback(() => {
-        const cardHeight = card.current.offsetHeight
-        let cardOffsetTop
-        console.log(window.innerHeight);
-        if (window.innerHeight > 800) cardOffsetTop = card.current.offsetTop + (cardHeight - 100) * 0.92
-        else cardOffsetTop = card.current.offsetTop + (cardHeight - 200) * 0.92
-
+        // const cardHeight = card.current.offsetHeight
+        let cardOffsetTop = card.current.offsetTop - 150
         const scrollY = window.scrollY
 
         // parallax scrolling only if width more than 992 px
@@ -67,7 +63,7 @@ const FeatureCard = (props) => {
     useEffect(() => {
         // setActiveIndex(0)
         // handelActive(activeIndex);
-
+        // console.log(card.current.offsetTop);
         window.addEventListener("scroll", handleScroll)
         return () => {
             window.removeEventListener("scroll", handleScroll)
