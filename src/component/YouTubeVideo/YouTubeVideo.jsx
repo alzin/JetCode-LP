@@ -36,7 +36,7 @@ const YouTubeVideo = ({ videoId, autoplay }) => {
             ref={videoRef}
             src={`https://www.youtube.com/embed/${videoId}`}
             title="JetCode"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allow="accelerometer;autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
         ></iframe>
     );

@@ -199,8 +199,8 @@ header .container nav ul .list ul li {
         /* display: flex; */
         display: none;
         background-color: var(--white-color);
-        animation: scale .5s ease-in-out forwards;
-        transform-origin: top;
+        /* animation: scale .5s ease-in-out forwards; */
+        /* transform-origin: top; */
 
     }
 
@@ -249,7 +249,6 @@ header .container nav ul .list ul li {
     header .container nav ul .list ul li {
         margin: 0;
         width: calc(100% - 50px);
-
     }
 
     header .container nav ul .list ul li a {
