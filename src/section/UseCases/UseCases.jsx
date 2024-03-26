@@ -36,7 +36,7 @@ const UseCases = () => {
                                     <source src={item.srcVideo} type="video/mp4" />
                                     Your browser does not support the video tag.
                                 </video> */}
-                                <YouTubeVideo videoId="G1-ZuhjnvsM" autoplay={false}/>
+                                <YouTubeVideo videoId={item.videoId} autoplay={false}/>
                                 <h4 className="slide-title">{item.title}</h4>
                             </SwiperSlide>
                         )}

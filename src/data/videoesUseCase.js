@@ -1,21 +1,16 @@
-import JetCodeVideo from '../assets/videos/saas_demo.mp4'
+// import JetCodeVideo from '../assets/videos/saas_demo.mp4'
 
 const videoesUseCase = [
     {
         id: 1,
         title: "snake game",
-        videoSrc: JetCodeVideo
+        videoId: "G1-ZuhjnvsM"
     },
     {
         id: 2,
-        title: "snake game",
-        videoSrc: JetCodeVideo
-    },
-    {
-        id: 3,
-        title: "snake game",
-        videoSrc: JetCodeVideo
-    },
+        title: "portfolio demo",
+        videoId: "2SQfMADCGDk"
+    }
 
 ]
 export default videoesUseCase

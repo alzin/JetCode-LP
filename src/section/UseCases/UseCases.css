@@ -57,8 +57,8 @@
  .slide-title {
      margin-top: 15px;
      font-weight: bolder;
-     letter-spacing: 10px;
-     word-spacing: 30px;
+     /* letter-spacing: 10px;
+     word-spacing: 30px; */
      color: var(--main-color-2);
  }
 
