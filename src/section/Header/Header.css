@@ -22,7 +22,7 @@ header .container {
 
 header .container .logo {
     /* min-width: 60%; */
-    width: 70%;
+    width: 50%;
     height: 85px;
     /* background: red; */
     font-size: 34px;
@@ -41,9 +41,9 @@ header .container .logo span {
 
 header .container .logo img {
     /* background-color: aqua; */
-    /* max-width: 100%; */
-    height: 85px;
-    margin-left: -70px;
+    max-width: 100%;
+    height: 40px;
+    /* margin-left: -70px; */
 }
 
 header .container .burger {
@@ -55,7 +55,7 @@ header .container nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 50vw;
+    /* width: 50vw; */
 }
 
 header .container nav ul {
@@ -148,18 +148,20 @@ header .container nav ul .list ul li {
 
 
 @media (max-width: 1400px) {
+    header .container .logo {
+        width: 30%;
+    }
+
     header .container nav ul li {
-        margin-right: 20px;
+        margin-right: 14px;
     }
 }
 
 @media (max-width: 1200px) {
-    header .container .logo {
-        width: 50%;
-    }
 
     header .container nav ul li {
         margin-right: 10px;
+
     }
 }
 
@@ -169,12 +171,15 @@ header .container nav ul .list ul li {
 @media (max-width: 992px) {
 
     /* add */
-    header .header .container .logo header .container .logo img,header .container nav ul{
-        height: 70px;
+    header .header .container .logo img,
+    header .container nav ul {
+        height: 30px;
     }
-    .container .logo img{
-        margin-left: -60px !important;
+
+    header .container .logo {
+        width: fit-content;
     }
+
     header .container nav {
         opacity: 1 !important;
         z-index: 99999999;
@@ -194,8 +199,8 @@ header .container nav ul .list ul li {
         /* display: flex; */
         display: none;
         background-color: var(--white-color);
-        animation: scale .5s ease-in-out forwards;
-        transform-origin: top;
+        /* animation: scale .5s ease-in-out forwards; */
+        /* transform-origin: top; */
 
     }
 
@@ -208,7 +213,7 @@ header .container nav ul .list ul li {
         padding-left: 20px;
         width: 100%;
         height: fit-content;
-        margin: 20px;
+        margin: 30px;
     }
 
     header .container nav ul li {
@@ -244,7 +249,6 @@ header .container nav ul .list ul li {
     header .container nav ul .list ul li {
         margin: 0;
         width: calc(100% - 50px);
-
     }
 
     header .container nav ul .list ul li a {

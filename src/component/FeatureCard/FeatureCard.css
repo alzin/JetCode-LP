@@ -1,4 +1,4 @@
-.feed-card {
+.feature-card {
     max-width: 1311px;
     transition: all 1s;
     display: flex;
@@ -6,24 +6,20 @@
     justify-content: center;
     width: fit-content;
     height: fit-content;
-
-    /* overflow: hidden; */
-
 }
 
-.feed-card:nth-child(1) {
+.feature-card:nth-child(2) {
     position: sticky;
-    /* top: 100px; */
     top: calc((100vh - 100px)*0.13)
 }
 
-.feed-card:nth-child(2) {
+.feature-card:nth-child(3) {
     position: sticky;
     top: calc((100vh - 100px)*0.13);
 }
 
-.feed-card:nth-child(3) {
-    position: sticky; 
+.feature-card:nth-child(4) {
+    position: sticky;
     top: calc(((100vh - 700px)));
     scale: .85;
 }
@@ -39,7 +35,6 @@
 
 .feed-section .container {
     overflow: hidden;
-    /* max-height: 150vh; */
     min-height: 700px;
     height: calc((100vh - (100px + 100vh * 0.13)));
     background: linear-gradient(180deg, #2b1e41, rgba(43, 30, 65, 0)), #110d18;
@@ -48,12 +43,14 @@
     padding: 79px 120px;
 }
 
-.feed-section .container .feed-head {
+.feed-section .container .feature-head {
     display: flex;
-    justify-content: space-between
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
-.feed-section .container .feed-head .head-section h2 {
+.feed-section .container .feature-head h2 {
+    /* background-color: red; */
     color: #f5f5f5;
     font-family: Satoshi, sans-serif;
     font-size: 52px;
@@ -68,11 +65,7 @@
 
 }
 
-.feed-section .container .feed-head .head-section h2 span {
-    color: #8338f8
-}
-
-.feed-section .container .feed-head .head-section p {
+.feed-section .container .feature-paragraph p {
     color: #c9c8c8;
     font-family: Satoshi, sans-serif;
     font-size: 22px;
@@ -86,35 +79,33 @@
 
 }
 
-.feed-section .container .feed-head .img-section {
-    margin-right: -90px;
-    margin-top: -50px;
-    max-height: 250px;
-    width: 340px
+.feed-section .container .feature-paragraph p:nth-child(2) {
+    color: #c9c8c8;
+    font-family: Satoshi, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    margin-top: 24px;
+    max-width: 500px;
 }
 
-.feed-section .container .feed-head .img-section img {
-    max-height: 250px;
-    max-width: 100%;
-    visibility: hidden;
+.feed-section .container .feature-head img {
+    max-width: 30%;
 }
 
-.feed-section .container .feed-content {
-    margin-top: 30px;
-    text-align: left;
-
+.feed-section .container .feature-paragraph {
+    margin-top: -250px;
 }
 
-
-
-
-
-
-@media screen and (max-width:1600px) {
-    .feed-section {
-        padding: 60px 150px
-    }
+.feature-card:nth-child(3) .feed-section .container .feature-paragraph {
+    margin-top: -200px;
 }
+
+.feature-card:nth-child(3) .feed-section .container .feature-head img {
+    margin-top: 130px;
+}
+
 
 @media screen and (max-width:1450px) {
     .feed-section {
@@ -125,40 +116,87 @@
         padding: 64px 90px
     }
 
-    .feed-section .container .feed-head .head-section h2 {
+    .feed-section .container .feature-head h2 {
         font-size: 48px
     }
 
-    .feed-section .container .feed-head .head-section p {
+    .feed-section .container .feature-paragraph {
+        margin-top: -250px;
+    }
+
+    .feed-section .container .feature-paragraph p {
         font-size: 22px;
-        margin-top: 50px
+        /* margin-top: 100px */
     }
 
-    .feed-section .container .feed-content {
-        margin-top: 25px
+    .feed-section .container .feature-paragraph p:nth-child(2) {
+        font-size: 20px;
+        margin-top: 20px
     }
 
-    .feed-section.minify {
-        transform: scale(.74)
+    .feed-section .container .feature-head img {
+        margin-right: -50px;
+        width: 25%;
+        margin-top: 100px;
+        /* background: #000; */
     }
+
+    .feature-card:nth-child(3) .feed-section .container .feature-paragraph {
+        margin-top: -150px;
+    }
+
 }
 
-@media screen and (max-width:1350px) {
+@media screen and (max-width:1200px) {
     .feed-section {
         padding: 0;
+    }
+
+    .feature-head {
+        flex-direction: column;
+    }
+
+    .feed-section .container .feature-paragraph {
+        margin-top: 0px;
+    }
+
+    .feed-section .container .feature-paragraph p {
+        font-size: 22px;
+        /* margin-top: 100px */
+    }
+
+    .feed-section .container .feature-paragraph p:nth-child(2) {
+        font-size: 20px;
+        margin-top: 20px;
+        display: none;
+    }
+
+    .feed-section .container .feature-head img {
+        width: 100%;
+        flex: 1 1;
+        margin: 10px auto;
+        /* background-color: red; */
+    }
+
+    .feature-card:nth-child(3) .feed-section .container .feature-paragraph {
+        margin-top: 0px;
     }
 }
 
 @media screen and (max-width:992px) {
+    .feature-card {
+        width: 100%;
+    }
 
     .feed-section {
         padding: 0;
         transform: scale(1);
+        width: 100%;
     }
 
-    .feed-card:nth-child(1),
-    .feed-card:nth-child(2),
-    .feed-card:nth-child(3) {
+    .feature-card:nth-child(2),
+    .feature-card:nth-child(3),
+    .feature-card:nth-child(4) {
         position: relative;
         top: initial;
         scale: 1;
@@ -173,36 +211,41 @@
         margin-bottom: 80px;
         padding: 44px 20px;
         width: 100%;
-        min-height: 800px;
-
+        height: fit-content;
+        min-height: fit-content;
+        margin-bottom: 40px;
         /* background: red; */
 
     }
 
-    .feed-section .container .feed-head {
-        display: flex;
-        justify-content: space-between
+    .features .feature-card:last-child .feed-section .container {
+        margin-bottom: 0px;
     }
 
-    .feed-section .container .feed-head .head-section h2 {
+    .feed-section .container .feature-paragraph p:nth-child(2) {
+        display: none;
+    }
+
+    .feed-section .container .feature-head h2 {
         font-size: 32px !important;
         line-height: 32px;
         /* text-align: center */
     }
 
-    .feed-section .container .feed-head .head-section p,
-    .feed-section .container .feed-head .img-section {
-        /* display: none */
+    .feed-section .container .feature-paragraph p {
         font-size: 20px;
     }
 
-    .feed-section .container .feed-head .img-section {
-        display: none;
+    .feature-card:nth-child(3) .feed-section .container .feature-head img {
+        width: 100%;
+        flex: 1 1;
+        margin-top: 20px;
     }
 
-    .feed-section .container .feed-content {
-        margin-top: 36px;
-        /* background: red; */
+    .feed-section .container .feature-head img {
+        width: 100%;
+        flex: 1 1;
+        margin-top: 20px;
+        /* scale: .8; */
     }
-
 }

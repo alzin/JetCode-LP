@@ -1,14 +1,11 @@
 .features{
     background: #110d18;
     padding: 100px 0 0px;
-    /* overflow-x: hidden; */
-    /* height: 450vh; */
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    position: relative;
+    /* position: relative; */
 
 }
 
@@ -21,6 +18,12 @@
 
 @media screen and (max-width:992px) {
     .features {
+        position: relative;
         padding-top: 0;
+    }
+    #features{
+        z-index: -9999999999;
+        position: absolute;
+        top:-100px;
     }
 }
