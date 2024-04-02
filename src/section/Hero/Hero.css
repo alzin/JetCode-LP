@@ -16,14 +16,15 @@
     gap: 20px !important;
 }
 
-.hero .hero-l .top-post {
-    width: 100%;
-    /* margin-top: 0px; */
-    gap: 20px;
+.hero .hero-l .top-post a{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
-    flex-wrap: wrap;
+    text-align: center;
+    color: #e8505a;
+    font-size: 20px;
+    font-weight: bolder;
+
 }
 
 
