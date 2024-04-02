@@ -18,14 +18,12 @@ const Hero = () => {
             {/* <Particle /> */}
             <div className="blur"></div>
             <div className="hero-l">
-                {/* <div className="top-post">
-                    <a href="https://www.producthunt.com/products/triibe-3?utm_source=badge-top-post-badge&utm_medium=badge#triibe-550d1379-c712-4f7a-8e39-eca27797766a">
-                        <img src={Badge} alt="Badge" />
+                <div className="top-post">
+                    {/* <a href="http://producthant" target="_blank" rel="noopener noreferrer">product hunt</a> */}
+                    <a href="https://www.producthunt.com/products/jetcode/reviews?utm_source=badge-product_review&utm_medium=badge&utm_souce=badge-jetcode" target="_blank" rel="noopener noreferrer">
+                        <img src="https://api.producthunt.com/widgets/embed-image/v1/product_review.svg?product_id=577633&theme=light" alt="JetCode - Accelerate&#0032;Your&#0032;Development&#0032;with&#0032;a&#0032;powerful&#0032;code&#0032;guide&#0032;&#0040;AI&#0041; | Product Hunt" />
                     </a>
-                    <a href="https://www.producthunt.com/products/triibe-3?utm_source=badge-top-post-badge&utm_medium=badge#triibe-550d1379-c712-4f7a-8e39-eca27797766a">
-                        <img src={TopicBadge} alt="TopicBadge" />
-                    </a>
-                </div> */}
+                </div>
 
                 <h1>
                     Accelerate Your Development with JetCode: <span className="gradiant-text">The Future of Efficient Programming</span>
