@@ -1,0 +1,114 @@
+.overview {
+    min-height: 2000px;
+    padding-top: 90px;
+    padding-bottom: 100px;
+    position: static;
+    background-color: var(--white-color);
+}
+
+.overview .container {
+    padding-top: 36px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    position: sticky;
+    top: max(calc((50vw - 100px)/6), 70px);
+    overflow: hidden;
+    /* border: 5px solid red; */
+}
+
+.overview .container h2 {
+    z-index: 999;
+    color: black;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+
+}
+
+.overview .container h2::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 5px;
+    margin: 10px auto 0px;
+    background: var(--primary-gradient);
+
+}
+
+.overview .container .videoContainer {
+    z-index: -1;
+    margin-top: max(calc((50vw - 100px)/6), 40px);
+    transform: perspective(1000px);
+    max-width: 1000px;
+    width: 100%;
+    aspect-ratio: 2/1;
+}
+
+.overview .container .videoContainer video {
+    width: 100%;
+}
+
+.overview .container .videoContainer iframe {
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width:1450px) {
+    .overview {
+        padding-top: 45px;
+        padding-bottom: 90px
+    }
+}
+
+@media screen and (max-width:992px) {
+
+    .overviewHash {
+        position: absolute;
+        top: 100vh;
+        display: block;
+        z-index: -9999999999999;
+    }
+
+    .overview {
+        min-height: fit-content;
+        padding: 100px 20px;
+    }
+
+    .overview .container {
+        top: initial;
+        padding: 0;
+    }
+
+    .overview .container h2 {
+        color: white;
+        font-size: 24px
+    }
+
+    .overview .container p {
+        color: #f5f5f5;
+        font-size: 16px
+    }
+
+    .overview .container video .overview .container iframe {
+        width: 100%
+    }
+
+    .overview .container .videoContainer {
+        margin-top: 0;
+        padding-top: 36px;
+
+    }
+
+    .overview .container .videoContainer {
+        transform: none;
+    }
+}

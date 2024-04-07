@@ -1,0 +1,149 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: hidden;
+    min-height: calc(100vh - 80px);
+    margin-top: 10px;
+}
+
+.hero .heroLeft {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px !important;
+}
+
+.hero .heroLeft .topPost a {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: center;
+    color: #e8505a;
+    font-size: 20px;
+    font-weight: bolder;
+    width: 250px;
+    height: 55px;
+    position: relative;
+}
+
+
+
+.hero .heroLeft h1 {
+    width: 100%;
+    position: relative;
+    color: var(--dark-color);
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+}
+
+
+.hero .heroLeft p {
+    font-size: 15px;
+    color: var(--dark-color);
+    opacity: .7;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.hero .heroLeft .heroButton {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.hero .heroRight {
+    display: none;
+}
+
+.hero .heroRight img {
+    max-width: 100%;
+    border-radius: 10px;
+    z-index: 9999;
+    visibility: hidden;
+}
+
+.blur {
+    top: 50px;
+    right: -100px;
+    rotate: 180deg;
+    background: var(--primary-gradient);
+    overflow: hidden;
+}
+
+
+/************************* 
+  start responsive hero
+*************************/
+
+@media (max-width: 991px) {
+    .blur {
+        display: none;
+    }
+
+    .hero .heroRight {
+        display: none;
+    }
+
+    .hero .heroLeft {
+        flex: 1 1;
+    }
+
+    .hero .heroLeft h1 {
+        width: 100%;
+        text-align: center;
+        margin-top: 40px;
+        font-size: 30px;
+    }
+
+    .hero .heroLeft p {
+        font-size: 15px;
+        max-width: 550px;
+        display: none;
+    }
+
+    .hero .heroLeft .heroButton {
+        width: 100%;
+        /* margin-left: -25px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        row-gap: 20px;
+    }
+
+
+    .hero .heroRight img {
+        display: none;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .hero .heroLeft h1 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .hero .heroLeft p {
+        text-align: justify;
+
+    }
+
+    .hero .heroLeft h1 .slideWord {
+        display: block;
+        width: 100%;
+
+    }
+
+    .hero .heroLeft h1 .slideWord span {
+        width: 100%;
+        margin: 0;
+
+    }
+}

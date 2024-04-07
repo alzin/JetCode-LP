@@ -1,0 +1,107 @@
+.header {
+    width: 100vw;
+    box-shadow: 0 0 10px var(--dark-color);
+    background-color: var(--white-color);
+    opacity: .9;
+    z-index: 9999;
+    position: sticky;
+    top: 0;
+    height: 85px;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.header .container .logo {
+    width: 50%;
+    height: 40px;
+    font-size: 34px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+
+.header .container .logo img {
+    max-width: 25%;
+}
+
+.header .container nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .container nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 85px;
+}
+
+.active {
+    display: flex !important;
+}
+
+
+@media (max-width: 1400px) {
+    .header .container .logo {
+        width: 30%;
+    }
+    .header .container .logo img{
+        max-width: 60%;
+    }
+}
+
+
+@media (max-width: 992px) {
+
+    .header .container nav ul {
+        height: 30px;
+    }
+
+    .header .container .logo{
+        width: 150px;
+    }
+    .header .container .logo img {
+        max-width: 100%;
+    }
+
+    .header .container nav {
+        opacity: 1 !important;
+        z-index: 99999999;
+        width: 100vw;
+        height: 100vh;
+        max-height: 200vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        padding-top: 150px;
+        display: none;
+        background-color: var(--white-color);
+    }
+
+
+    .header .container nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 10px;
+        padding-left: 20px;
+        width: 100%;
+        height: fit-content;
+        margin: 30px;
+    }
+}
+
