@@ -47,7 +47,7 @@ const Overview = () => {
                 <h2 className='gradiantText'>{OverviewData.title}</h2>
                
                 <div className={Styles.videoContainer} style={{ "transform": `perspective(1000px) rotateX(${rotateX}deg)` }}>
-                    <YouTubeVideo videoId={OverviewData.overviewVideoId} autoplay={false} />
+                    <YouTubeVideo videoId={OverviewData.overviewVideoId} autoplay={true} />
                 </div>
            
             </div>

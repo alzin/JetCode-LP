@@ -1,13 +1,10 @@
-// css
-import Style from "./contact.module.css";
-
 // metadata
+
 export const metadata = {
-  title: "Contact Us Page",
-  description: "Contact Us Page",
+  title: "Contact Us"
 };
 
-const AboutLayout = ({ children }) => {
+const ContactUsLayout = ({ children }) => {
   return (
     <main>
       {children}
@@ -15,4 +12,4 @@ const AboutLayout = ({ children }) => {
   );
 }
 
-export default AboutLayout
+export default ContactUsLayout

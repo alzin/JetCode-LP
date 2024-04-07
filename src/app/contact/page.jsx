@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef} from 'react'
 import emailjs from "@emailjs/browser";
 
 import Styles from './contact.module.css'
