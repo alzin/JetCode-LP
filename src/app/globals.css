@@ -1,0 +1,150 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+:root {
+  --main-color-1: #8a1e86;
+  --main-color-2: #6610f2;
+  --white-color: #fff;
+  --dark-color: #212529;
+  --paragraph-color: #2c2c2c;
+  /* --primary-gradient: linear-gradient(93deg, #9e5cf4 .87%, #5b69e6 93.09%); */
+  --primary-gradient: linear-gradient(93deg, #9e5cf4, #5b69e6, #e8505a);
+
+  --main-font-size: 18px;
+
+  --main-duration: .3s;
+
+  --main-radius: 20px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  border-style: none;
+}
+
+body {
+  overflow-x: hidden !important;
+  font-family: satoshi, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+iframe {
+  outline:none !important;
+  border:  none !important;
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+}
+
+
+.container {
+  padding-left: 75px;
+  padding-right: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: hidden;
+}
+
+.blur {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  filter: blur(100px);
+  z-index: -9;
+  overflow-x: hidden;
+}
+
+.gradiantText {
+  color: transparent !important;
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 992px;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    width: 1400px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+}
+
+.swiper {
+  width: 100%;
+  /* height: 100%; */
+  padding-bottom: 40px !important;
+}
+
+.swiper-slide {
+  margin: 30px 0;
+  text-align: center;
+  font-size: 18px;
+  height: 500px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: calc(50% - 30px) !important;
+  background: var(--primary-gradient);
+  color: transparent !important;
+  -webkit-background-clip: text;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--primary-gradient) !important;
+}
+
+.swiper-slide:nth-child(1n),
+.swiper-slide:nth-child(2n),
+.swiper-slide:nth-child(3n) {
+  width: 80%;
+  aspect-ratio: 2/1;
+}
