@@ -1,0 +1,25 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #7875ea;
+    min-height: 65px;
+    padding: 24px 120px;
+    font-size: 13px;
+    color: white;
+    overflow-x: hidden;
+    text-align: center;
+
+}
+
+.copyWrite {
+    min-width: 250px;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    display: none;
+}

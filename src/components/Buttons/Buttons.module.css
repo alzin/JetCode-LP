@@ -1,0 +1,45 @@
+.TryFreeButton,
+.BookADemo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: fit-content;
+    height: 46px;
+    font-size: var(--main-font-size);
+    font-weight: 500;
+    padding: 20px;
+    cursor: pointer;
+    z-index: 9;
+    background: var(--primary-gradient);
+    border-radius: calc(var(--main-radius) * .5);
+    color: var(--white-color) !important;
+    line-height: 19px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.BookADemo {
+    background: var(--white-color);
+    border: 1px solid var(--main-color-2);
+    color: #5b69e6 !important;
+}
+
+@media (max-width: 991px) {
+
+    .TryFreeButton,
+    .BookADemo {
+        margin-top: 100px;
+        margin-left: 30px;
+        flex: 1;
+    }
+
+    .TryFreeButton {
+        width: 80vw;
+        margin-top: 50px;
+        max-height: 50px !important;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+
+}
